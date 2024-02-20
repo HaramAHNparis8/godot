@@ -1,0 +1,77 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://boss_trans_re.png" type="Texture" id=1]
+[ext_resource path="res://boss.gd" type="Script" id=2]
+[ext_resource path="res://witcher1.jpg" type="Texture" id=4]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 30.6927
+
+[sub_resource type="Animation" id=1]
+resource_name = "새 애니메이션"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.5, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 1, 2 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2, 1 ), Vector2( 4, 3 ) ]
+}
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 41.7854
+
+[node name="boss" type="KinematicBody2D"]
+position = Vector2( 32.2889, 1.50378 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="coll" type="CollisionShape2D" parent="."]
+position = Vector2( 107.405, 32.2094 )
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 227.329, 37.1519 )
+scale = Vector2( 2, 1.65066 )
+texture = ExtResource( 1 )
+vframes = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "새 애니메이션"
+"anims/새 애니메이션" = SubResource( 1 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 107.405, 32.2094 )
+texture = ExtResource( 4 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 226.302, 42.3427 )
+shape = SubResource( 3 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

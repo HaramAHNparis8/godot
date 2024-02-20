@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://apple1.png" type="Texture" id=1]
+[ext_resource path="res://apple2.png" type="Texture" id=2]
+[ext_resource path="res://apple3.png" type="Texture" id=3]
+[ext_resource path="res://apple.gd" type="Script" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 7.82521
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "apple",
+"speed": 1.0
+} ]
+
+[sub_resource type="Animation" id=3]
+resource_name = "bounce"
+length = 0.55
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 252.02, 209.408 ), Vector2( 252.02, 175.715 ), Vector2( 252.02, 209.408 ) ]
+}
+
+[node name="apple" type="Area2D"]
+position = Vector2( 8.67737, 2.74109 )
+collision_layer = 8
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 252.02, 209.408 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 252.02, 209.408 )
+scale = Vector2( 0.74585, 0.953927 )
+frames = SubResource( 2 )
+animation = "apple"
+frame = 1
+playing = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/bounce = SubResource( 3 )
+
+[connection signal="body_entered" from="." to="." method="_on_apple_body_entered"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

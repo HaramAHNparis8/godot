@@ -1,0 +1,20 @@
+{
+	"events": [
+		{
+			"character": "character-1639439096.json",
+			"event_id": "dialogic_001",
+			"portrait": "(Don't change)",
+			"text": "Hello, I'm the npc :)"
+		},
+		{
+			"custom_slot": "",
+			"event_id": "dialogic_026",
+			"use_default_slot": true
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1639439133.json",
+		"name": "timeline-1"
+	}
+}

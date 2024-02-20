@@ -1,0 +1,93 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://dialoguere.png" type="Texture" id=1]
+[ext_resource path="res://ArchitectsDaughter.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://fliche.png" type="Texture" id=3]
+[ext_resource path="res://dialogue_box.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "fliche"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( -0.1, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 853.524, 371.257 ), Vector2( 853.809, 378.473 ) ]
+}
+
+[node name="dialogue" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dialogue_box" type="Control" parent="."]
+anchor_left = 0.487
+anchor_top = 0.917
+anchor_right = 0.487
+anchor_bottom = 0.917
+margin_left = -480.688
+margin_top = -407.657
+margin_right = 481.312
+margin_bottom = 0.343079
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="dialogue_box"]
+anchor_left = -0.0231934
+anchor_right = -0.0231934
+margin_left = 31.312
+margin_top = 107.0
+margin_right = 970.312
+margin_bottom = 510.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="dialogue_box"]
+anchor_left = 0.00808708
+anchor_top = 0.438
+anchor_right = 0.999087
+anchor_bottom = 1.0
+margin_left = 28.1732
+margin_top = 15.718
+margin_right = -1.82684
+margin_bottom = -15.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.0509804, 0.027451, 0.027451, 1 )
+bbcode_enabled = true
+bbcode_text = "I'm on a create my own game and I know that I'm managed to finish my project but I cannot deny that I  just want to die :) "
+text = "I'm on a create my own game and I know that I'm managed to finish my project but I cannot deny that I  just want to die :) "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fliche" type="Sprite" parent="dialogue_box"]
+position = Vector2( 853.754, 377.083 )
+scale = Vector2( 1.72765, 2.02875 )
+texture = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="dialogue_box/fliche"]
+autoplay = "fliche"
+anims/fliche = SubResource( 2 )
+
+[node name="Tween" type="Tween" parent="dialogue_box"]
+
+[connection signal="tween_completed" from="dialogue_box/Tween" to="dialogue_box" method="_on_Tween_tween_completed"]

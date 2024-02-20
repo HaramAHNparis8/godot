@@ -1,0 +1,24 @@
+{
+	"color": "#ff813a3a",
+	"description": "",
+	"display_name": "shia",
+	"display_name_bool": true,
+	"id": "character-1639439096.json",
+	"mirror_portraits": false,
+	"name": "personne_homme",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://personne_hommepng1.png"
+		},
+		{
+			"name": "personne_hommepng2",
+			"path": "res://personne_hommepng2.png"
+		}
+	],
+	"scale": 100
+}
