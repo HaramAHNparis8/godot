@@ -139,7 +139,6 @@ position = Vector2( 109.07, 41.7291 )
 scale = Vector2( 6.26366, 2.96736 )
 frames = SubResource( 3 )
 animation = "bottom_small"
-frame = 1
 playing = true
 
 [node name="space bar" type="Label" parent="Panel"]
@@ -178,7 +177,6 @@ position = Vector2( 85.5801, 108.199 )
 scale = Vector2( 2.72256, 2.96736 )
 frames = SubResource( 3 )
 animation = "bottom_small"
-frame = 1
 playing = true
 
 [node name="Label" type="Label" parent="Panel"]
@@ -208,7 +206,6 @@ position = Vector2( 85.4047, 179.786 )
 scale = Vector2( 2.72256, 2.96736 )
 frames = SubResource( 3 )
 animation = "bottom_small"
-frame = 1
 playing = true
 
 [node name="Label3" type="Label" parent="Panel"]
@@ -238,6 +235,7 @@ __meta__ = {
 position = Vector2( 78.2454, 263.022 )
 scale = Vector2( 1.13126, 1.71571 )
 frames = SubResource( 10 )
+frame = 1
 playing = true
 
 [node name="Label5" type="Label" parent="Panel"]
