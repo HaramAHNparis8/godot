@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ES_FOLLOW ME Wild Horse - Cospe.mp3-a18f4b8a0933b575d98cf8ee4e933f3d.mp3str"
+
+[deps]
+
+source_file="res://ES_FOLLOW ME Wild Horse - Cospe.mp3"
+dest_files=[ "res://.import/ES_FOLLOW ME Wild Horse - Cospe.mp3-a18f4b8a0933b575d98cf8ee4e933f3d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

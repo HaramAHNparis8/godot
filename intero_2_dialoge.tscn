@@ -1,0 +1,100 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://dialoguere.png" type="Texture" id=1]
+[ext_resource path="res://fliche.png" type="Texture" id=2]
+[ext_resource path="res://dialoge_interdo2.gd" type="Script" id=3]
+[ext_resource path="res://ArchitectsDaughter.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 10
+font_data = ExtResource( 4 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=3]
+resource_name = "새 애니메이션"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 546.226, 156.802 ), Vector2( 545.544, 142.824 ) ]
+}
+
+[node name="intero_2_dialoge" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dialoge_interdo2" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -512.0
+margin_top = -254.318
+margin_right = 464.0
+margin_bottom = 0.681885
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="dialoge_interdo2"]
+anchor_left = 0.323
+anchor_top = 0.875
+anchor_right = 0.323
+anchor_bottom = 0.875
+margin_left = -255.248
+margin_top = -186.125
+margin_right = 255.752
+margin_bottom = -0.124908
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="dialoge_interdo2"]
+anchor_left = 0.44839
+anchor_top = 0.714
+anchor_right = 0.44839
+anchor_bottom = 0.714
+margin_left = -360.374
+margin_top = -97.07
+margin_right = 130.626
+margin_bottom = -0.0700073
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "hel"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="dialoge_interdo2"]
+
+[node name="indicateur" type="AnimatedSprite" parent="dialoge_interdo2"]
+position = Vector2( 547.417, 154.621 )
+scale = Vector2( 1, 1.38599 )
+frames = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="dialoge_interdo2/indicateur"]
+autoplay = "새 애니메이션"
+"anims/새 애니메이션" = SubResource( 3 )
+
+[connection signal="tween_completed" from="dialoge_interdo2/Tween" to="dialoge_interdo2" method="_on_Tween_tween_completed"]

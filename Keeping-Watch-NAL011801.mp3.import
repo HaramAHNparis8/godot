@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Keeping-Watch-NAL011801.mp3-d2dd0f031dd8ed59ccfa8a973cdd5c42.mp3str"
+
+[deps]
+
+source_file="res://Keeping-Watch-NAL011801.mp3"
+dest_files=[ "res://.import/Keeping-Watch-NAL011801.mp3-d2dd0f031dd8ed59ccfa8a973cdd5c42.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

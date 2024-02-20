@@ -1,0 +1,1385 @@
+[gd_scene load_steps=60 format=2]
+
+[ext_resource path="res://tile_set.png" type="Texture" id=1]
+[ext_resource path="res://ES_FOLLOW ME Wild Horse - Cospe.mp3" type="AudioStream" id=2]
+[ext_resource path="res://personnage_femme.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Node2D.gd" type="Script" id=4]
+[ext_resource path="res://background_godot.png" type="Texture" id=6]
+[ext_resource path="res://apple.tscn" type="PackedScene" id=7]
+[ext_resource path="res://apple1.png" type="Texture" id=8]
+[ext_resource path="res://DroidSans.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://nombre de pomme.gd" type="Script" id=10]
+[ext_resource path="res://DroidSans-Bold.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://apple2.png" type="Texture" id=12]
+[ext_resource path="res://gardien.tscn" type="PackedScene" id=14]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 48, 32, 0, 32, 0, 0, 48, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
+
+[sub_resource type="TileSet" id=17]
+0/name = "tile_set.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 64, 0, 16, 16 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 0
+0/autotile/bitmask_flags = [ Vector2( 4, 2 ), 325, Vector2( 4, 3 ), 325, Vector2( 4, 4 ), 5 ]
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 16, 16 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "tile_set.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 32, 16 )
+1/tile_mode = 1
+1/autotile/bitmask_mode = 0
+1/autotile/bitmask_flags = [  ]
+1/autotile/icon_coordinate = Vector2( 0, 0 )
+1/autotile/tile_size = Vector2( 16, 16 )
+1/autotile/spacing = 0
+1/autotile/occluder_map = [  ]
+1/autotile/navpoly_map = [  ]
+1/autotile/priority_map = [  ]
+1/autotile/z_index_map = [  ]
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "tile_set.png 2"
+2/texture = ExtResource( 1 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( -16, 0, 16, 16 )
+2/tile_mode = 1
+2/autotile/bitmask_mode = 0
+2/autotile/bitmask_flags = [  ]
+2/autotile/icon_coordinate = Vector2( 0, 0 )
+2/autotile/tile_size = Vector2( 16, 16 )
+2/autotile/spacing = 0
+2/autotile/occluder_map = [  ]
+2/autotile/navpoly_map = [  ]
+2/autotile/priority_map = [  ]
+2/autotile/z_index_map = [  ]
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "tile_set.png 3"
+3/texture = ExtResource( 1 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 16, 16 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "tile_set.png 4"
+4/texture = ExtResource( 1 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 16, 0, 16, 16 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "tile_set.png 5"
+5/texture = ExtResource( 1 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 32, 0, 16, 16 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "tile_set.png 6"
+6/texture = ExtResource( 1 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 16, 16, 16 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "tile_set.png 7"
+7/texture = ExtResource( 1 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 16, 16, 16, 16 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "tile_set.png 8"
+8/texture = ExtResource( 1 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 32, 16, 16, 16 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "tile_set.png 9"
+9/texture = ExtResource( 1 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 32, 16, 16 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "tile_set.png 10"
+10/texture = ExtResource( 1 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 16, 32, 16, 16 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "tile_set.png 11"
+11/texture = ExtResource( 1 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 16, 32, 16, 16 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "tile_set.png 12"
+12/texture = ExtResource( 1 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 32, 32, 16, 16 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
+13/name = "tile_set.png 13"
+13/texture = ExtResource( 1 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 48, 0, 16, 48 )
+13/tile_mode = 1
+13/autotile/bitmask_mode = 0
+13/autotile/bitmask_flags = [  ]
+13/autotile/icon_coordinate = Vector2( 0, 0 )
+13/autotile/tile_size = Vector2( 16, 16 )
+13/autotile/spacing = 0
+13/autotile/occluder_map = [  ]
+13/autotile/navpoly_map = [  ]
+13/autotile/priority_map = [  ]
+13/autotile/z_index_map = [  ]
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape_one_way = false
+13/shape_one_way_margin = 0.0
+13/shapes = [  ]
+13/z_index = 0
+14/name = "tile_set.png 14"
+14/texture = ExtResource( 1 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 48, 0, 16, 16 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shape_offset = Vector2( 0, 0 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape_one_way = false
+14/shape_one_way_margin = 0.0
+14/shapes = [  ]
+14/z_index = 0
+15/name = "tile_set.png 15"
+15/texture = ExtResource( 1 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 48, 16, 16, 16 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 0, 0 )
+15/navigation_offset = Vector2( 0, 0 )
+15/shape_offset = Vector2( 0, 0 )
+15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+15/shape_one_way = false
+15/shape_one_way_margin = 0.0
+15/shapes = [  ]
+15/z_index = 0
+16/name = "tile_set.png 16"
+16/texture = ExtResource( 1 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 48, 32, 16, 16 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 0, 0 )
+16/navigation_offset = Vector2( 0, 0 )
+16/shape_offset = Vector2( 0, 0 )
+16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+16/shape_one_way = false
+16/shape_one_way_margin = 0.0
+16/shapes = [  ]
+16/z_index = 0
+17/name = "tile_set.png 17"
+17/texture = ExtResource( 1 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 0, 48, 16, 16 )
+17/tile_mode = 0
+17/occluder_offset = Vector2( 0, 0 )
+17/navigation_offset = Vector2( 0, 0 )
+17/shape_offset = Vector2( 0, 0 )
+17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+17/shape_one_way = false
+17/shape_one_way_margin = 0.0
+17/shapes = [  ]
+17/z_index = 0
+18/name = "tile_set.png 18"
+18/texture = ExtResource( 1 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 16, 48, 16, 16 )
+18/tile_mode = 0
+18/occluder_offset = Vector2( 0, 0 )
+18/navigation_offset = Vector2( 0, 0 )
+18/shape_offset = Vector2( 0, 0 )
+18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+18/shape_one_way = false
+18/shape_one_way_margin = 0.0
+18/shapes = [  ]
+18/z_index = 0
+19/name = "tile_set.png 19"
+19/texture = ExtResource( 1 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 32, 48, 16, 16 )
+19/tile_mode = 0
+19/occluder_offset = Vector2( 0, 0 )
+19/navigation_offset = Vector2( 0, 0 )
+19/shape_offset = Vector2( 0, 0 )
+19/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+19/shape_one_way = false
+19/shape_one_way_margin = 0.0
+19/shapes = [  ]
+19/z_index = 0
+20/name = "tile_set.png 20"
+20/texture = ExtResource( 1 )
+20/tex_offset = Vector2( 0, 0 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 48, 48, 16, 16 )
+20/tile_mode = 0
+20/occluder_offset = Vector2( 0, 0 )
+20/navigation_offset = Vector2( 0, 0 )
+20/shape_offset = Vector2( 0, 0 )
+20/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+20/shape_one_way = false
+20/shape_one_way_margin = 0.0
+20/shapes = [  ]
+20/z_index = 0
+21/name = "tile_set.png 21"
+21/texture = ExtResource( 1 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 64, 32, 16, 16 )
+21/tile_mode = 0
+21/occluder_offset = Vector2( 0, 0 )
+21/navigation_offset = Vector2( 0, 0 )
+21/shape_offset = Vector2( 0, 0 )
+21/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+21/shape = SubResource( 1 )
+21/shape_one_way = false
+21/shape_one_way_margin = 1.0
+21/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+21/z_index = 0
+22/name = "tile_set.png 22"
+22/texture = ExtResource( 1 )
+22/tex_offset = Vector2( 0, 0 )
+22/modulate = Color( 1, 1, 1, 1 )
+22/region = Rect2( 64, 48, 16, 16 )
+22/tile_mode = 0
+22/occluder_offset = Vector2( 0, 0 )
+22/navigation_offset = Vector2( 0, 0 )
+22/shape_offset = Vector2( 0, 0 )
+22/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+22/shape_one_way = false
+22/shape_one_way_margin = 0.0
+22/shapes = [  ]
+22/z_index = 0
+23/name = "tile_set.png 23"
+23/texture = ExtResource( 1 )
+23/tex_offset = Vector2( 0, 0 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 80, 32, 16, 16 )
+23/tile_mode = 0
+23/occluder_offset = Vector2( 0, 0 )
+23/navigation_offset = Vector2( 0, 0 )
+23/shape_offset = Vector2( 0, 0 )
+23/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+23/shape_one_way = false
+23/shape_one_way_margin = 0.0
+23/shapes = [  ]
+23/z_index = 0
+24/name = "tile_set.png 24"
+24/texture = ExtResource( 1 )
+24/tex_offset = Vector2( 0, 0 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 80, 48, 16, 16 )
+24/tile_mode = 0
+24/occluder_offset = Vector2( 0, 0 )
+24/navigation_offset = Vector2( 0, 0 )
+24/shape_offset = Vector2( 0, 0 )
+24/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+24/shape_one_way = false
+24/shape_one_way_margin = 0.0
+24/shapes = [  ]
+24/z_index = 0
+25/name = "tile_set.png 25"
+25/texture = ExtResource( 1 )
+25/tex_offset = Vector2( 0, 0 )
+25/modulate = Color( 1, 1, 1, 1 )
+25/region = Rect2( 64, 48, 16, 16 )
+25/tile_mode = 1
+25/autotile/bitmask_mode = 0
+25/autotile/bitmask_flags = [  ]
+25/autotile/icon_coordinate = Vector2( 0, 0 )
+25/autotile/tile_size = Vector2( 16, 16 )
+25/autotile/spacing = 0
+25/autotile/occluder_map = [  ]
+25/autotile/navpoly_map = [  ]
+25/autotile/priority_map = [  ]
+25/autotile/z_index_map = [  ]
+25/occluder_offset = Vector2( 0, 0 )
+25/navigation_offset = Vector2( 0, 0 )
+25/shape_offset = Vector2( 0, 0 )
+25/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+25/shape_one_way = false
+25/shape_one_way_margin = 0.0
+25/shapes = [  ]
+25/z_index = 0
+26/name = "tile_set.png 26"
+26/texture = ExtResource( 1 )
+26/tex_offset = Vector2( 0, 0 )
+26/modulate = Color( 1, 1, 1, 1 )
+26/region = Rect2( 64, 0, 16, 16 )
+26/tile_mode = 0
+26/occluder_offset = Vector2( 0, 0 )
+26/navigation_offset = Vector2( 0, 0 )
+26/shape_offset = Vector2( 0, 0 )
+26/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+26/shape_one_way = false
+26/shape_one_way_margin = 0.0
+26/shapes = [  ]
+26/z_index = 0
+27/name = "tile_set.png 27"
+27/texture = ExtResource( 1 )
+27/tex_offset = Vector2( 0, 0 )
+27/modulate = Color( 1, 1, 1, 1 )
+27/region = Rect2( 64, 0, 16, 16 )
+27/tile_mode = 0
+27/occluder_offset = Vector2( 0, 0 )
+27/navigation_offset = Vector2( 0, 0 )
+27/shape_offset = Vector2( 0, 0 )
+27/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+27/shape = SubResource( 2 )
+27/shape_one_way = false
+27/shape_one_way_margin = 1.0
+27/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+27/z_index = 0
+28/name = "tile_set.png 28"
+28/texture = ExtResource( 1 )
+28/tex_offset = Vector2( 0, 0 )
+28/modulate = Color( 1, 1, 1, 1 )
+28/region = Rect2( 64, 0, 16, 16 )
+28/tile_mode = 0
+28/occluder_offset = Vector2( 0, 0 )
+28/navigation_offset = Vector2( 0, 0 )
+28/shape_offset = Vector2( 0, 0 )
+28/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+28/shape_one_way = false
+28/shape_one_way_margin = 0.0
+28/shapes = [  ]
+28/z_index = 0
+29/name = "tile_set.png 29"
+29/texture = ExtResource( 1 )
+29/tex_offset = Vector2( 0, 0 )
+29/modulate = Color( 1, 1, 1, 1 )
+29/region = Rect2( 16, 16, 16, 16 )
+29/tile_mode = 0
+29/occluder_offset = Vector2( 0, 0 )
+29/navigation_offset = Vector2( 0, 0 )
+29/shape_offset = Vector2( 0, 0 )
+29/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+29/shape = SubResource( 3 )
+29/shape_one_way = false
+29/shape_one_way_margin = 1.0
+29/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+29/z_index = 0
+30/name = "tile_set.png 30"
+30/texture = ExtResource( 1 )
+30/tex_offset = Vector2( 0, 0 )
+30/modulate = Color( 1, 1, 1, 1 )
+30/region = Rect2( 0, 16, 16, 16 )
+30/tile_mode = 0
+30/occluder_offset = Vector2( 0, 0 )
+30/navigation_offset = Vector2( 0, 0 )
+30/shape_offset = Vector2( 0, 0 )
+30/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+30/shape = SubResource( 4 )
+30/shape_one_way = false
+30/shape_one_way_margin = 1.0
+30/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+30/z_index = 0
+31/name = "tile_set.png 31"
+31/texture = ExtResource( 1 )
+31/tex_offset = Vector2( 0, 0 )
+31/modulate = Color( 1, 1, 1, 1 )
+31/region = Rect2( 0, 0, 16, 16 )
+31/tile_mode = 0
+31/occluder_offset = Vector2( 0, 0 )
+31/navigation_offset = Vector2( 0, 0 )
+31/shape_offset = Vector2( 0, 0 )
+31/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+31/shape = SubResource( 5 )
+31/shape_one_way = false
+31/shape_one_way_margin = 1.0
+31/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+31/z_index = 0
+32/name = "tile_set.png 32"
+32/texture = ExtResource( 1 )
+32/tex_offset = Vector2( 0, 0 )
+32/modulate = Color( 1, 1, 1, 1 )
+32/region = Rect2( 16, 0, 16, 16 )
+32/tile_mode = 0
+32/occluder_offset = Vector2( 0, 0 )
+32/navigation_offset = Vector2( 0, 0 )
+32/shape_offset = Vector2( 0, 0 )
+32/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+32/shape = SubResource( 6 )
+32/shape_one_way = false
+32/shape_one_way_margin = 1.0
+32/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+32/z_index = 0
+33/name = "tile_set.png 33"
+33/texture = ExtResource( 1 )
+33/tex_offset = Vector2( 0, 0 )
+33/modulate = Color( 1, 1, 1, 1 )
+33/region = Rect2( 32, 0, 16, 16 )
+33/tile_mode = 0
+33/occluder_offset = Vector2( 0, 0 )
+33/navigation_offset = Vector2( 0, 0 )
+33/shape_offset = Vector2( 0, 0 )
+33/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+33/shape = SubResource( 7 )
+33/shape_one_way = false
+33/shape_one_way_margin = 1.0
+33/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+33/z_index = 0
+34/name = "tile_set.png 34"
+34/texture = ExtResource( 1 )
+34/tex_offset = Vector2( 0, 0 )
+34/modulate = Color( 1, 1, 1, 1 )
+34/region = Rect2( 48, 0, 16, 16 )
+34/tile_mode = 0
+34/occluder_offset = Vector2( 0, 0 )
+34/navigation_offset = Vector2( 0, 0 )
+34/shape_offset = Vector2( 0, 0 )
+34/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+34/shape = SubResource( 8 )
+34/shape_one_way = false
+34/shape_one_way_margin = 1.0
+34/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+34/z_index = 0
+35/name = "tile_set.png 35"
+35/texture = ExtResource( 1 )
+35/tex_offset = Vector2( 0, 0 )
+35/modulate = Color( 1, 1, 1, 1 )
+35/region = Rect2( 0, 16, 48, 32 )
+35/tile_mode = 0
+35/occluder_offset = Vector2( 0, 0 )
+35/navigation_offset = Vector2( 0, 0 )
+35/shape_offset = Vector2( 0, 0 )
+35/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+35/shape = SubResource( 9 )
+35/shape_one_way = false
+35/shape_one_way_margin = 1.0
+35/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+35/z_index = 0
+36/name = "tile_set.png 36"
+36/texture = ExtResource( 1 )
+36/tex_offset = Vector2( 0, 0 )
+36/modulate = Color( 1, 1, 1, 1 )
+36/region = Rect2( 0, 16, 16, 16 )
+36/tile_mode = 0
+36/occluder_offset = Vector2( 0, 0 )
+36/navigation_offset = Vector2( 0, 0 )
+36/shape_offset = Vector2( 0, 0 )
+36/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+36/shape = SubResource( 10 )
+36/shape_one_way = false
+36/shape_one_way_margin = 1.0
+36/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+36/z_index = 0
+37/name = "tile_set.png 37"
+37/texture = ExtResource( 1 )
+37/tex_offset = Vector2( 0, 0 )
+37/modulate = Color( 1, 1, 1, 1 )
+37/region = Rect2( 16, 16, 16, 16 )
+37/tile_mode = 0
+37/occluder_offset = Vector2( 0, 0 )
+37/navigation_offset = Vector2( 0, 0 )
+37/shape_offset = Vector2( 0, 0 )
+37/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+37/shape = SubResource( 11 )
+37/shape_one_way = false
+37/shape_one_way_margin = 1.0
+37/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+37/z_index = 0
+38/name = "tile_set.png 38"
+38/texture = ExtResource( 1 )
+38/tex_offset = Vector2( 0, 0 )
+38/modulate = Color( 1, 1, 1, 1 )
+38/region = Rect2( 32, 16, 16, 16 )
+38/tile_mode = 0
+38/occluder_offset = Vector2( 0, 0 )
+38/navigation_offset = Vector2( 0, 0 )
+38/shape_offset = Vector2( 0, 0 )
+38/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+38/shape_one_way = false
+38/shape_one_way_margin = 0.0
+38/shapes = [  ]
+38/z_index = 0
+39/name = "tile_set.png 39"
+39/texture = ExtResource( 1 )
+39/tex_offset = Vector2( 0, 0 )
+39/modulate = Color( 1, 1, 1, 1 )
+39/region = Rect2( 32, 16, 16, 16 )
+39/tile_mode = 0
+39/occluder_offset = Vector2( 0, 0 )
+39/navigation_offset = Vector2( 0, 0 )
+39/shape_offset = Vector2( 0, 0 )
+39/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+39/shape = SubResource( 12 )
+39/shape_one_way = false
+39/shape_one_way_margin = 1.0
+39/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+39/z_index = 0
+40/name = "tile_set.png 40"
+40/texture = ExtResource( 1 )
+40/tex_offset = Vector2( 0, 0 )
+40/modulate = Color( 1, 1, 1, 1 )
+40/region = Rect2( 0, 32, 16, 16 )
+40/tile_mode = 0
+40/occluder_offset = Vector2( 0, 0 )
+40/navigation_offset = Vector2( 0, 0 )
+40/shape_offset = Vector2( 0, 0 )
+40/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+40/shape = SubResource( 13 )
+40/shape_one_way = false
+40/shape_one_way_margin = 1.0
+40/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+40/z_index = 0
+41/name = "tile_set.png 41"
+41/texture = ExtResource( 1 )
+41/tex_offset = Vector2( 0, 0 )
+41/modulate = Color( 1, 1, 1, 1 )
+41/region = Rect2( 16, 32, 16, 16 )
+41/tile_mode = 0
+41/occluder_offset = Vector2( 0, 0 )
+41/navigation_offset = Vector2( 0, 0 )
+41/shape_offset = Vector2( 0, 0 )
+41/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+41/shape = SubResource( 14 )
+41/shape_one_way = false
+41/shape_one_way_margin = 1.0
+41/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+41/z_index = 0
+42/name = "tile_set.png 42"
+42/texture = ExtResource( 1 )
+42/tex_offset = Vector2( 0, 0 )
+42/modulate = Color( 1, 1, 1, 1 )
+42/region = Rect2( 32, 32, 16, 16 )
+42/tile_mode = 0
+42/occluder_offset = Vector2( 0, 0 )
+42/navigation_offset = Vector2( 0, 0 )
+42/shape_offset = Vector2( 0, 0 )
+42/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+42/shape = SubResource( 15 )
+42/shape_one_way = false
+42/shape_one_way_margin = 1.0
+42/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+42/z_index = 0
+43/name = "tile_set.png 43"
+43/texture = ExtResource( 1 )
+43/tex_offset = Vector2( 0, 0 )
+43/modulate = Color( 1, 1, 1, 1 )
+43/region = Rect2( 64, 32, 16, 16 )
+43/tile_mode = 0
+43/occluder_offset = Vector2( 0, 0 )
+43/navigation_offset = Vector2( 0, 0 )
+43/shape_offset = Vector2( 0, 0 )
+43/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+43/shape_one_way = false
+43/shape_one_way_margin = 0.0
+43/shapes = [  ]
+43/z_index = 0
+44/name = "tile_set.png 44"
+44/texture = ExtResource( 1 )
+44/tex_offset = Vector2( 0, 0 )
+44/modulate = Color( 1, 1, 1, 1 )
+44/region = Rect2( 64, 32, 48, 48 )
+44/tile_mode = 0
+44/occluder_offset = Vector2( 0, 0 )
+44/navigation_offset = Vector2( 0, 0 )
+44/shape_offset = Vector2( 0, 0 )
+44/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+44/shape = SubResource( 16 )
+44/shape_one_way = false
+44/shape_one_way_margin = 1.0
+44/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+44/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 35.2982, 1.87744 )
+
+[sub_resource type="RectangleShape2D" id=19]
+extents = Vector2( 62.7203, 3.4335 )
+
+[sub_resource type="RectangleShape2D" id=20]
+extents = Vector2( 41.5147, 5.94455 )
+
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 145.169, 2.92081 )
+
+[sub_resource type="RectangleShape2D" id=22]
+extents = Vector2( 61.5271, 4.60284 )
+
+[sub_resource type="RectangleShape2D" id=23]
+extents = Vector2( 95.5545, 7.23813 )
+
+[sub_resource type="RectangleShape2D" id=24]
+extents = Vector2( 158.538, 1.37775 )
+
+[sub_resource type="RectangleShape2D" id=25]
+extents = Vector2( 175.478, 5.21216 )
+
+[sub_resource type="RectangleShape2D" id=26]
+extents = Vector2( 36.6252, 1.49768 )
+
+[sub_resource type="RectangleShape2D" id=27]
+extents = Vector2( 45.1425, 1.79913 )
+
+[sub_resource type="RectangleShape2D" id=28]
+extents = Vector2( 18.336, 1.7627 )
+
+[sub_resource type="RectangleShape2D" id=29]
+extents = Vector2( 35.8631, 3.42833 )
+
+[sub_resource type="RectangleShape2D" id=30]
+extents = Vector2( 25.6292, 3.54501 )
+
+[sub_resource type="RectangleShape2D" id=31]
+extents = Vector2( 24.7619, 3.5795 )
+
+[sub_resource type="RectangleShape2D" id=32]
+extents = Vector2( 41.6637, 3.46519 )
+
+[sub_resource type="RectangleShape2D" id=33]
+extents = Vector2( 30.3619, 4.3576 )
+
+[sub_resource type="RectangleShape2D" id=34]
+extents = Vector2( 50.7137, 4.73203 )
+
+[sub_resource type="RectangleShape2D" id=35]
+extents = Vector2( 35.9785, 2.53873 )
+
+[sub_resource type="RectangleShape2D" id=36]
+extents = Vector2( 34.2014, 3.56093 )
+
+[sub_resource type="RectangleShape2D" id=37]
+extents = Vector2( 36.4472, 1.98106 )
+
+[sub_resource type="RectangleShape2D" id=38]
+extents = Vector2( 34.9963, 3.28296 )
+
+[sub_resource type="RectangleShape2D" id=39]
+extents = Vector2( 25.5427, 5.28748 )
+
+[sub_resource type="RectangleShape2D" id=40]
+extents = Vector2( 5.48505, 5.27228 )
+
+[sub_resource type="RectangleShape2D" id=41]
+extents = Vector2( 685.318, 10 )
+
+[sub_resource type="StyleBoxFlat" id=42]
+bg_color = Color( 0.301961, 0, 0, 0.596078 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=43]
+size = 60
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=44]
+size = 50
+font_data = ExtResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=45]
+bg_color = Color( 0.533333, 0.14902, 0.14902, 0.431373 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=46]
+size = 60
+outline_color = Color( 0.827451, 0.772549, 0.772549, 1 )
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=47]
+size = 40
+font_data = ExtResource( 11 )
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 4.042, -3.44288 )
+script = ExtResource( 4 )
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 26.2761, 1472.62 )
+tile_set = SubResource( 17 )
+cell_size = Vector2( 16, 16 )
+collision_layer = 2
+collision_mask = 3
+format = 1
+tile_data = PoolIntArray( -43515930, 3, 0, -7667721, 536870941, 0, -7667720, 536870941, 0, -7667719, 536870941, 0, -7667718, 1073741853, 0, -7667717, 536870941, 0, -7667716, 536870941, 0, -7667715, 536870941, 0, -7667714, 536870941, 0, -7667713, 536870941, 0, -7733248, 1073741853, 0, -7733247, 536870941, 0, -7733246, 536870941, 0, -7733245, 1073741853, 0, -7733244, 1073741853, 0, -7733243, 1073741853, 0, -7733242, 1073741853, 0, -7733241, 1073741853, 0, -7733240, 1073741853, 0, -7733239, 1073741853, 0, -7733238, 1073741853, 0, -7733237, 1073741853, 0, -7733236, 1073741853, 0, -7733235, 1073741853, 0, -7733234, 1073741853, 0, -7733233, 1073741853, 0, -7733232, 1073741853, 0, -7733231, 1073741853, 0, -7733230, 1073741853, 0, -7733229, 1073741853, 0, -7733228, 1073741853, 0, -7733227, 1073741853, 0, -7733226, 1073741853, 0, -7733225, 1073741853, 0, -7733224, 1073741853, 0, -7733223, 1073741853, 0, -7733222, 1073741853, 0, -7733221, 1073741853, 0, -7733220, 1073741853, 0, -7733219, 1073741853, 0, -7733218, 1073741853, 0, -7733217, 1073741853, 0, -7733216, 1073741853, 0, -7733215, 1073741853, 0, -7733214, 1073741853, 0, -7733213, 1073741853, 0, -7733212, 1073741853, 0, -7733211, 1073741853, 0, -7733210, 1073741853, 0, -7733209, 1073741853, 0, -7733208, 1073741853, 0, -7733207, 1073741853, 0, -7733206, 1073741853, 0, -7733205, 1073741853, 0, -7733204, 1073741853, 0, -7733203, 1073741853, 0, -7733202, 1073741853, 0, -7733201, 1073741853, 0, -7733200, 1073741853, 0, -7733199, 1073741853, 0, -7733198, 1073741853, 0, -7733197, 1073741853, 0, -7733196, 1073741853, 0, -7733195, 1073741853, 0, -7733194, 1073741853, 0, -7733193, 1073741853, 0, -7733192, 1073741853, 0, -7733191, 1073741853, 0, -7733190, 1073741853, 0, -7733189, 1073741853, 0, -7733188, 1073741853, 0, -7733187, 1073741853, 0, -7733186, 1073741853, 0, -7733185, 1073741853, 0, -7733184, 1073741853, 0, -7733183, 1073741853, 0, -7733182, 1073741853, 0, -7733181, 1073741853, 0, -7733180, 1073741853, 0, -7733179, 1073741853, 0, -7733178, 1073741853, 0, -7733177, 1073741853, 0, -7733176, 1073741853, 0, -7733175, 1073741853, 0, -7733174, 1073741853, 0, -7733173, 1073741853, 0, -7733172, 1073741853, 0, -7733171, 1073741853, 0, -7733170, 1073741853, 0, -7733169, 1073741853, 0, -7733168, 1073741853, 0, -7733167, 1073741853, 0, -7733166, 1073741853, 0, -7733165, 1073741853, 0, -7733164, 1073741853, 0, -7733163, 1073741853, 0, -7733162, 1073741853, 0, -7733161, 1073741853, 0, -7733160, 1073741853, 0, -7733159, 1073741853, 0, -7733158, 1073741853, 0, -7733157, 1073741853, 0, -7733156, 1073741853, 0, -7733155, 1073741853, 0, -7733154, 1073741853, 0, -7733153, 1073741853, 0, -7733152, 1073741853, 0, -7733151, 1073741853, 0, -7733150, 1073741853, 0, -7733149, 1073741853, 0, -7733148, 1073741853, 0, -7733147, 1073741853, 0, -7733146, 1073741853, 0, -7733145, 1073741853, 0, -7733144, 1073741853, 0, -7733143, 1073741853, 0, -7602185, 536870941, 0, -7602184, 536870941, 0, -7602183, 1073741853, 0, -7602182, 1073741853, 0, -7602181, 1073741853, 0, -7602180, 1073741853, 0, -7602179, 1073741853, 0, -7602178, 1073741853, 0, -7602177, 536870941, 0, -7667712, 536870941, 0, -7667711, 536870941, 0, -7667710, 536870941, 0, -7667709, 536870941, 0, -7667708, 536870941, 0, -7667707, 536870941, 0, -7667706, 1073741853, 0, -7667705, 1073741853, 0, -7667704, 1073741853, 0, -7667703, 1073741853, 0, -7667702, 1073741853, 0, -7667701, 1073741853, 0, -7667700, 1073741853, 0, -7667699, 1073741853, 0, -7667698, 1073741853, 0, -7667697, 1073741853, 0, -7667696, 1073741853, 0, -7667695, 1073741853, 0, -7667694, 1073741853, 0, -7667693, 1073741853, 0, -7667692, 1073741853, 0, -7667691, 1073741853, 0, -7667690, 1073741853, 0, -7667689, 1073741853, 0, -7667688, 1073741853, 0, -7667687, 1073741853, 0, -7667686, 1073741853, 0, -7667685, 1073741853, 0, -7667684, 1073741853, 0, -7667683, 1073741853, 0, -7667682, 1073741853, 0, -7667681, 1073741853, 0, -7667680, 1073741853, 0, -7667679, 1073741853, 0, -7667678, 1073741853, 0, -7667677, 1073741853, 0, -7667676, 1073741853, 0, -7667675, 1073741853, 0, -7667674, 1073741853, 0, -7667673, 1073741853, 0, -7667672, 1073741853, 0, -7667671, 1073741853, 0, -7667670, 1073741853, 0, -7667669, 1073741853, 0, -7667668, 1073741853, 0, -7667667, 1073741853, 0, -7667666, 1073741853, 0, -7667665, 1073741853, 0, -7667664, 1073741853, 0, -7667663, 1073741853, 0, -7667662, 1073741853, 0, -7667661, 1073741853, 0, -7667660, 1073741853, 0, -7667659, 1073741853, 0, -7667658, 1073741853, 0, -7667657, 1073741853, 0, -7667656, 1073741853, 0, -7667655, 1073741853, 0, -7667654, 1073741853, 0, -7667653, 1073741853, 0, -7667652, 1073741853, 0, -7667651, 1073741853, 0, -7667650, 1073741853, 0, -7667649, 1073741853, 0, -7667648, 1073741853, 0, -7667647, 1073741853, 0, -7667646, 1073741853, 0, -7667645, 1073741853, 0, -7667644, 1073741853, 0, -7667643, 1073741853, 0, -7667642, 1073741853, 0, -7667641, 1073741853, 0, -7667640, 1073741853, 0, -7667639, 1073741853, 0, -7667638, 1073741853, 0, -7667637, 1073741853, 0, -7667636, 1073741853, 0, -7667635, 1073741853, 0, -7667634, 1073741853, 0, -7667633, 1073741853, 0, -7667632, 1073741853, 0, -7667631, 1073741853, 0, -7667630, 1073741853, 0, -7667629, 1073741853, 0, -7667628, 1073741853, 0, -7667627, 1073741853, 0, -7667626, 1073741853, 0, -7667625, 1073741853, 0, -7667624, 1073741853, 0, -7667623, 1073741853, 0, -7667622, 1073741853, 0, -7667621, 1073741853, 0, -7667620, 1073741853, 0, -7667619, 1073741853, 0, -7667618, 1073741853, 0, -7667617, 1073741853, 0, -7667616, 1073741853, 0, -7667615, 1073741853, 0, -7667614, 1073741853, 0, -7667613, 1073741853, 0, -7667612, 1073741853, 0, -7667611, 1073741853, 0, -7667610, 1073741853, 0, -7667609, 1073741853, 0, -7667608, 1073741853, 0, -7667607, 1073741853, 0, -7536649, 536870941, 0, -7536648, 536870941, 0, -7536647, 536870941, 0, -7536646, 1073741853, 0, -7536645, 1073741853, 0, -7536644, 1073741853, 0, -7536643, 1073741853, 0, -7536642, 1073741853, 0, -7536641, 1073741853, 0, -7602176, 1073741853, 0, -7602175, 1073741853, 0, -7602174, 1073741853, 0, -7602173, 1073741853, 0, -7602172, 1073741853, 0, -7602171, 536870941, 0, -7602170, 536870941, 0, -7602169, 536870941, 0, -7602168, 536870941, 0, -7602167, 536870941, 0, -7602166, 536870941, 0, -7602165, 536870941, 0, -7602164, 536870941, 0, -7602163, 536870941, 0, -7602162, 536870941, 0, -7602161, 536870941, 0, -7602160, 536870941, 0, -7602159, 536870941, 0, -7602158, 536870941, 0, -7602157, 536870941, 0, -7602156, 536870941, 0, -7602155, 536870941, 0, -7602154, 536870941, 0, -7602153, 536870941, 0, -7602152, 1073741853, 0, -7602151, 1073741853, 0, -7602150, 1073741853, 0, -7602149, 1073741853, 0, -7602148, 1073741853, 0, -7602147, 1073741853, 0, -7602146, 1073741853, 0, -7602145, 1073741853, 0, -7602144, 1073741853, 0, -7602143, 1073741853, 0, -7602142, 1073741853, 0, -7602141, 1073741853, 0, -7602140, 1073741853, 0, -7602139, 1073741853, 0, -7602138, 1073741853, 0, -7602137, 1073741853, 0, -7602136, 1073741853, 0, -7602135, 1073741853, 0, -7602134, 1073741853, 0, -7602133, 1073741853, 0, -7602132, 1073741853, 0, -7602131, 1073741853, 0, -7602130, 1073741853, 0, -7602129, 1073741853, 0, -7602128, 1073741853, 0, -7602127, 1073741853, 0, -7602126, 1073741853, 0, -7602125, 1073741853, 0, -7602124, 1073741853, 0, -7602123, 1073741853, 0, -7602122, 1073741853, 0, -7602121, 1073741853, 0, -7602120, 1073741853, 0, -7602119, 1073741853, 0, -7602118, 1073741853, 0, -7602117, 1073741853, 0, -7602116, 1073741853, 0, -7602115, 1073741853, 0, -7602114, 1073741853, 0, -7602113, 1073741853, 0, -7602112, 1073741853, 0, -7602111, 1073741853, 0, -7602110, 1073741853, 0, -7602109, 1073741853, 0, -7602108, 1073741853, 0, -7602107, 1073741853, 0, -7602106, 1073741853, 0, -7602105, 1073741853, 0, -7602104, 1073741853, 0, -7602103, 1073741853, 0, -7602102, 1073741853, 0, -7602101, 1073741853, 0, -7602100, 1073741853, 0, -7602099, 1073741853, 0, -7602098, 1073741853, 0, -7602097, 1073741853, 0, -7602096, 1073741853, 0, -7602095, 1073741853, 0, -7602094, 1073741853, 0, -7602093, 1073741853, 0, -7602092, 1073741853, 0, -7602091, 1073741853, 0, -7602090, 1073741853, 0, -7602089, 1073741853, 0, -7602088, 1073741853, 0, -7602087, 1073741853, 0, -7602086, 1073741853, 0, -7602085, 1073741853, 0, -7602084, 1073741853, 0, -7602083, 1073741853, 0, -7602082, 1073741853, 0, -7602081, 1073741853, 0, -7602080, 1073741853, 0, -7602079, 1073741853, 0, -7602078, 1073741853, 0, -7602077, 1073741853, 0, -7602076, 1073741853, 0, -7602075, 1073741853, 0, -7602074, 1073741853, 0, -7602073, 1073741853, 0, -7602072, 1073741853, 0, -7602071, 1073741853, 0, -7471113, 536870941, 0, -7471112, 536870941, 0, -7471111, 536870941, 0, -7471110, 1073741853, 0, -7471109, 1073741853, 0, -7471108, 1073741853, 0, -7471107, 1073741853, 0, -7471106, 1073741853, 0, -7471105, 1073741853, 0, -7536640, 1073741853, 0, -7536639, 1073741853, 0, -7536638, 1073741853, 0, -7536637, 1073741853, 0, -7536636, 1073741853, 0, -7536635, 1073741853, 0, -7536634, 1073741853, 0, -7536633, 1073741853, 0, -7536632, 1073741853, 0, -7536631, 1073741853, 0, -7536630, 1073741853, 0, -7536629, 536870941, 0, -7536628, 536870941, 0, -7536627, 536870941, 0, -7536626, 536870941, 0, -7536625, 536870941, 0, -7536624, 536870941, 0, -7536623, 536870941, 0, -7536622, 536870941, 0, -7536621, 536870941, 0, -7536620, 536870941, 0, -7536619, 536870941, 0, -7536618, 536870941, 0, -7536617, 536870941, 0, -7536616, 1073741853, 0, -7536615, 1073741853, 0, -7536614, 1073741853, 0, -7536613, 1073741853, 0, -7536612, 1073741853, 0, -7536611, 1073741853, 0, -7536610, 1073741853, 0, -7536609, 1073741853, 0, -7536608, 1073741853, 0, -7536607, 1073741853, 0, -7536606, 1073741853, 0, -7536605, 1073741853, 0, -7536604, 1073741853, 0, -7536603, 1073741853, 0, -7536602, 1073741853, 0, -7536601, 1073741853, 0, -7536600, 1073741853, 0, -7536599, 1073741853, 0, -7536598, 1073741853, 0, -7536597, 1073741853, 0, -7536596, 1073741853, 0, -7536595, 1073741853, 0, -7536594, 1073741853, 0, -7536593, 1073741853, 0, -7536592, 1073741853, 0, -7536591, 1073741853, 0, -7536590, 1073741853, 0, -7536589, 1073741853, 0, -7536588, 1073741853, 0, -7536587, 1073741853, 0, -7536586, 1073741853, 0, -7536585, 1073741853, 0, -7536584, 1073741853, 0, -7536583, 1073741853, 0, -7536582, 1073741853, 0, -7536581, 1073741853, 0, -7536580, 1073741853, 0, -7536579, 1073741853, 0, -7536578, 1073741853, 0, -7536577, 1073741853, 0, -7536576, 1073741853, 0, -7536575, 1073741853, 0, -7536574, 1073741853, 0, -7536573, 1073741853, 0, -7536572, 1073741853, 0, -7536571, 1073741853, 0, -7536570, 1073741853, 0, -7536569, 1073741853, 0, -7536568, 1073741853, 0, -7536567, 1073741853, 0, -7536566, 1073741853, 0, -7536565, 1073741853, 0, -7536564, 1073741853, 0, -7536563, 1073741853, 0, -7536562, 1073741853, 0, -7536561, 1073741853, 0, -7536560, 1073741853, 0, -7536559, 1073741853, 0, -7536558, 1073741853, 0, -7536557, 1073741853, 0, -7536556, 1073741853, 0, -7536555, 1073741853, 0, -7536554, 1073741853, 0, -7536553, 1073741853, 0, -7536552, 1073741853, 0, -7536551, 1073741853, 0, -7536550, 1073741853, 0, -7536549, 1073741853, 0, -7536548, 1073741853, 0, -7536547, 1073741853, 0, -7536546, 1073741853, 0, -7536545, 1073741853, 0, -7536544, 1073741853, 0, -7536543, 1073741853, 0, -7536542, 1073741853, 0, -7536541, 1073741853, 0, -7536540, 1073741853, 0, -7536539, 1073741853, 0, -7536538, 1073741853, 0, -7536537, 1073741853, 0, -7536536, 1073741853, 0, -7536535, 1073741853, 0, -7405577, 536870941, 0, -7405576, 536870941, 0, -7405575, 536870941, 0, -7405574, 1073741853, 0, -7405573, 1073741853, 0, -7405572, 1073741853, 0, -7405571, 1073741853, 0, -7405570, 1073741853, 0, -7405569, 1073741853, 0, -7471104, 1073741853, 0, -7471103, 1073741853, 0, -7471102, 1073741853, 0, -7471101, 1073741853, 0, -7471100, 1073741853, 0, -7471099, 1073741853, 0, -7471098, 1073741853, 0, -7471097, 1073741853, 0, -7471096, 1073741853, 0, -7471095, 1073741853, 0, -7471094, 1073741853, 0, -7471093, 1073741853, 0, -7471092, 1073741853, 0, -7471091, 1073741853, 0, -7471090, 1073741853, 0, -7471089, 1073741853, 0, -7471088, 1073741853, 0, -7471087, 1073741853, 0, -7471086, 1073741853, 0, -7471085, 1073741853, 0, -7471084, 1073741853, 0, -7471083, 1073741853, 0, -7471082, 1073741853, 0, -7471081, 1073741853, 0, -7471080, 1073741853, 0, -7471079, 1073741853, 0, -7471078, 1073741853, 0, -7471077, 1073741853, 0, -7471076, 1073741853, 0, -7471075, 1073741853, 0, -7471074, 1073741853, 0, -7471073, 1073741853, 0, -7471072, 1073741853, 0, -7471071, 1073741853, 0, -7471070, 1073741853, 0, -7471069, 1073741853, 0, -7471068, 1073741853, 0, -7471067, 1073741853, 0, -7471066, 1073741853, 0, -7471065, 1073741853, 0, -7471064, 1073741853, 0, -7471063, 1073741853, 0, -7471062, 1073741853, 0, -7471061, 1073741853, 0, -7471060, 1073741853, 0, -7471059, 1073741853, 0, -7471058, 1073741853, 0, -7471057, 1073741853, 0, -7471056, 1073741853, 0, -7471055, 1073741853, 0, -7471054, 1073741853, 0, -7471053, 1073741853, 0, -7471052, 1073741853, 0, -7471051, 1073741853, 0, -7471050, 1073741853, 0, -7471049, 1073741853, 0, -7471048, 1073741853, 0, -7471047, 1073741853, 0, -7471046, 1073741853, 0, -7471045, 1073741853, 0, -7471044, 1073741853, 0, -7471043, 1073741853, 0, -7471042, 1073741853, 0, -7471041, 1073741853, 0, -7471040, 1073741853, 0, -7471039, 1073741853, 0, -7471038, 1073741853, 0, -7471037, 1073741853, 0, -7471036, 1073741853, 0, -7471035, 1073741853, 0, -7471034, 1073741853, 0, -7471033, 1073741853, 0, -7471032, 1073741853, 0, -7471031, 1073741853, 0, -7471030, 1073741853, 0, -7471029, 1073741853, 0, -7471028, 1073741853, 0, -7471027, 1073741853, 0, -7471026, 1073741853, 0, -7471025, 1073741853, 0, -7471024, 1073741853, 0, -7471023, 1073741853, 0, -7471022, 1073741853, 0, -7471021, 1073741853, 0, -7471020, 1073741853, 0, -7471019, 1073741853, 0, -7471018, 1073741853, 0, -7471017, 1073741853, 0, -7471016, 1073741853, 0, -7471015, 1073741853, 0, -7471014, 1073741853, 0, -7471013, 1073741853, 0, -7471012, 1073741853, 0, -7471011, 1073741853, 0, -7471010, 1073741853, 0, -7471009, 1073741853, 0, -7471008, 1073741853, 0, -7471007, 1073741853, 0, -7471006, 1073741853, 0, -7471005, 1073741853, 0, -7471004, 1073741853, 0, -7471003, 1073741853, 0, -7471002, 1073741853, 0, -7471001, 1073741853, 0, -7471000, 1073741853, 0, -7470999, 1073741853, 0, -7340041, 536870941, 0, -7340040, 536870941, 0, -7340039, 536870941, 0, -7340038, 1073741853, 0, -7340037, 1073741853, 0, -7340036, 1073741853, 0, -7340035, 1073741853, 0, -7340034, 1073741853, 0, -7340033, 1073741853, 0, -7405568, 1073741853, 0, -7405567, 1073741853, 0, -7405566, 1073741853, 0, -7405565, 1073741853, 0, -7405564, 1073741853, 0, -7405563, 1073741853, 0, -7405562, 1073741853, 0, -7405561, 1073741853, 0, -7405560, 1073741853, 0, -7405559, 1073741853, 0, -7405558, 1073741853, 0, -7405557, 1073741853, 0, -7405556, 1073741853, 0, -7405555, 1073741853, 0, -7405554, 1073741853, 0, -7405553, 1073741853, 0, -7405552, 1073741853, 0, -7405551, 1073741853, 0, -7405550, 1073741853, 0, -7405549, 1073741853, 0, -7405548, 1073741853, 0, -7405547, 1073741853, 0, -7405546, 1073741853, 0, -7405545, 1073741853, 0, -7405544, 1073741853, 0, -7405543, 1073741853, 0, -7405542, 1073741853, 0, -7405541, 1073741853, 0, -7405540, 1073741853, 0, -7405539, 1073741853, 0, -7405538, 1073741853, 0, -7405537, 1073741853, 0, -7405536, 1073741853, 0, -7405535, 1073741853, 0, -7405534, 1073741853, 0, -7405533, 1073741853, 0, -7405532, 1073741853, 0, -7405531, 1073741853, 0, -7405530, 1073741853, 0, -7405529, 1073741853, 0, -7405528, 1073741853, 0, -7405527, 1073741853, 0, -7405526, 1073741853, 0, -7405525, 1073741853, 0, -7405524, 1073741853, 0, -7405523, 1073741853, 0, -7405522, 1073741853, 0, -7405521, 1073741853, 0, -7405520, 1073741853, 0, -7405519, 1073741853, 0, -7405518, 1073741853, 0, -7405517, 1073741853, 0, -7405516, 1073741853, 0, -7405515, 1073741853, 0, -7405514, 1073741853, 0, -7405513, 1073741853, 0, -7405512, 1073741853, 0, -7405511, 1073741853, 0, -7405510, 1073741853, 0, -7405509, 1073741853, 0, -7405508, 1073741853, 0, -7405507, 1073741853, 0, -7405506, 1073741853, 0, -7405505, 1073741853, 0, -7405504, 1073741853, 0, -7405503, 1073741853, 0, -7405502, 1073741853, 0, -7405501, 1073741853, 0, -7405500, 1073741853, 0, -7405499, 1073741853, 0, -7405498, 1073741853, 0, -7405497, 1073741853, 0, -7405496, 1073741853, 0, -7405495, 1073741853, 0, -7405494, 1073741853, 0, -7405493, 1073741853, 0, -7405492, 1073741853, 0, -7405491, 1073741853, 0, -7405490, 1073741853, 0, -7405489, 1073741853, 0, -7405488, 1073741853, 0, -7405487, 1073741853, 0, -7405486, 1073741853, 0, -7405485, 1073741853, 0, -7405484, 1073741853, 0, -7405483, 1073741853, 0, -7405482, 1073741853, 0, -7405481, 1073741853, 0, -7405480, 1073741853, 0, -7405479, 1073741853, 0, -7405478, 1073741853, 0, -7405477, 1073741853, 0, -7405476, 1073741853, 0, -7405475, 1073741853, 0, -7405474, 1073741853, 0, -7405473, 1073741853, 0, -7405472, 1073741853, 0, -7405471, 1073741853, 0, -7405470, 1073741853, 0, -7405469, 1073741853, 0, -7405468, 1073741853, 0, -7405467, 1073741853, 0, -7405466, 1073741853, 0, -7405465, 1073741853, 0, -7405464, 1073741853, 0, -7405463, 1073741853, 0, -7274505, 536870941, 0, -7274504, 536870941, 0, -7274503, 536870941, 0, -7274502, 1073741853, 0, -7274501, 1073741853, 0, -7274500, 1073741853, 0, -7274499, 1073741853, 0, -7274498, 1073741853, 0, -7274497, 1073741853, 0, -7340032, 1073741853, 0, -7340031, 1073741853, 0, -7340030, 1073741853, 0, -7340029, 1073741853, 0, -7340028, 1073741853, 0, -7340027, 1073741853, 0, -7340026, 1073741853, 0, -7340025, 1073741853, 0, -7340024, 1073741853, 0, -7340023, 1073741853, 0, -7340022, 1073741853, 0, -7340021, 1073741853, 0, -7340020, 1073741853, 0, -7340019, 1073741853, 0, -7340018, 1073741853, 0, -7340017, 1073741853, 0, -7340016, 1073741853, 0, -7340015, 1073741853, 0, -7340014, 1073741853, 0, -7340013, 1073741853, 0, -7340012, 1073741853, 0, -7340011, 1073741853, 0, -7340010, 1073741853, 0, -7340009, 1073741853, 0, -7340008, 1073741853, 0, -7340007, 1073741853, 0, -7340006, 1073741853, 0, -7340005, 1073741853, 0, -7340004, 1073741853, 0, -7340003, 1073741853, 0, -7340002, 1073741853, 0, -7340001, 1073741853, 0, -7340000, 1073741853, 0, -7339999, 1073741853, 0, -7339998, 1073741853, 0, -7339997, 1073741853, 0, -7339996, 1073741853, 0, -7339995, 1073741853, 0, -7339994, 1073741853, 0, -7339993, 1073741853, 0, -7339992, 1073741853, 0, -7339991, 1073741853, 0, -7339990, 1073741853, 0, -7339989, 1073741853, 0, -7339988, 1073741853, 0, -7339987, 1073741853, 0, -7339986, 1073741853, 0, -7339985, 1073741853, 0, -7339984, 1073741853, 0, -7339983, 1073741853, 0, -7339982, 1073741853, 0, -7339981, 1073741853, 0, -7339980, 1073741853, 0, -7339979, 1073741853, 0, -7339978, 1073741853, 0, -7339977, 1073741853, 0, -7339976, 1073741853, 0, -7339975, 1073741853, 0, -7339974, 1073741853, 0, -7339973, 1073741853, 0, -7339972, 1073741853, 0, -7339971, 1073741853, 0, -7339970, 1073741853, 0, -7339969, 1073741853, 0, -7339968, 1073741853, 0, -7339967, 1073741853, 0, -7339966, 1073741853, 0, -7339965, 1073741853, 0, -7339964, 1073741853, 0, -7339963, 1073741853, 0, -7339962, 1073741853, 0, -7339961, 1073741853, 0, -7339960, 1073741853, 0, -7339959, 1073741853, 0, -7339958, 1073741853, 0, -7339957, 1073741853, 0, -7339956, 1073741853, 0, -7339955, 1073741853, 0, -7339954, 1073741853, 0, -7339953, 1073741853, 0, -7339952, 1073741853, 0, -7339951, 1073741853, 0, -7339950, 1073741853, 0, -7339949, 1073741853, 0, -7339948, 1073741853, 0, -7339947, 1073741853, 0, -7339946, 1073741853, 0, -7339945, 1073741853, 0, -7339944, 1073741853, 0, -7339943, 1073741853, 0, -7339942, 1073741853, 0, -7339941, 1073741853, 0, -7339940, 1073741853, 0, -7339939, 1073741853, 0, -7339938, 1073741853, 0, -7339937, 1073741853, 0, -7339936, 1073741853, 0, -7339935, 1073741853, 0, -7339934, 1073741853, 0, -7339933, 1073741853, 0, -7339932, 1073741853, 0, -7339931, 1073741853, 0, -7339930, 1073741853, 0, -7339929, 1073741853, 0, -7339928, 1073741853, 0, -7339927, 1073741853, 0, -7208969, 536870941, 0, -7208968, 536870941, 0, -7208967, 536870941, 0, -7208966, 1073741853, 0, -7208965, 1073741853, 0, -7208964, 1073741853, 0, -7208963, 1073741853, 0, -7208962, 1073741853, 0, -7208961, 1073741853, 0, -7274496, 1073741853, 0, -7274495, 1073741853, 0, -7274494, 1073741853, 0, -7274493, 1073741853, 0, -7274492, 1073741853, 0, -7274491, 1073741853, 0, -7274490, 1073741853, 0, -7274489, 1073741853, 0, -7274488, 1073741853, 0, -7274487, 1073741853, 0, -7274486, 1073741853, 0, -7274485, 1073741853, 0, -7274484, 1073741853, 0, -7274483, 1073741853, 0, -7274482, 1073741853, 0, -7274481, 1073741853, 0, -7274480, 1073741853, 0, -7274479, 1073741853, 0, -7274478, 1073741853, 0, -7274477, 1073741853, 0, -7274476, 1073741853, 0, -7274475, 1073741853, 0, -7274474, 1073741853, 0, -7274473, 1073741853, 0, -7274472, 1073741853, 0, -7274471, 1073741853, 0, -7274470, 1073741853, 0, -7274469, 1073741853, 0, -7274468, 1073741853, 0, -7274467, 1073741853, 0, -7274466, 1073741853, 0, -7274465, 1073741853, 0, -7274464, 1073741853, 0, -7274463, 1073741853, 0, -7274462, 1073741853, 0, -7274461, 1073741853, 0, -7274460, 1073741853, 0, -7274459, 1073741853, 0, -7274458, 1073741853, 0, -7274457, 1073741853, 0, -7274456, 1073741853, 0, -7274455, 1073741853, 0, -7274454, 1073741853, 0, -7274453, 1073741853, 0, -7274452, 1073741853, 0, -7274451, 1073741853, 0, -7274450, 1073741853, 0, -7274449, 1073741853, 0, -7274448, 1073741853, 0, -7274447, 1073741853, 0, -7274446, 1073741853, 0, -7274445, 1073741853, 0, -7274444, 1073741853, 0, -7274443, 1073741853, 0, -7274442, 1073741853, 0, -7274441, 1073741853, 0, -7274440, 1073741853, 0, -7274439, 1073741853, 0, -7274438, 1073741853, 0, -7274437, 1073741853, 0, -7274436, 1073741853, 0, -7274435, 1073741853, 0, -7274434, 1073741853, 0, -7274433, 1073741853, 0, -7274432, 1073741853, 0, -7274431, 1073741853, 0, -7274430, 1073741853, 0, -7274429, 1073741853, 0, -7274428, 1073741853, 0, -7274427, 1073741853, 0, -7274426, 1073741853, 0, -7274425, 1073741853, 0, -7274424, 1073741853, 0, -7274423, 1073741853, 0, -7274422, 1073741853, 0, -7274421, 1073741853, 0, -7274420, 1073741853, 0, -7274419, 1073741853, 0, -7274418, 1073741853, 0, -7274417, 1073741853, 0, -7274416, 1073741853, 0, -7274415, 1073741853, 0, -7274414, 1073741853, 0, -7274413, 1073741853, 0, -7274412, 1073741853, 0, -7274411, 1073741853, 0, -7274410, 1073741853, 0, -7274409, 1073741853, 0, -7274408, 1073741853, 0, -7274407, 1073741853, 0, -7274406, 1073741853, 0, -7274405, 1073741853, 0, -7274404, 1073741853, 0, -7274403, 1073741853, 0, -7274402, 1073741853, 0, -7274401, 1073741853, 0, -7274400, 1073741853, 0, -7274399, 1073741853, 0, -7274398, 1073741853, 0, -7274397, 1073741853, 0, -7274396, 1073741853, 0, -7274395, 1073741853, 0, -7274394, 1073741853, 0, -7274393, 1073741853, 0, -7274392, 1073741853, 0, -7274391, 1073741853, 0, -7143433, 536870941, 0, -7143432, 536870941, 0, -7143431, 536870941, 0, -7143430, 1073741853, 0, -7143429, 1073741853, 0, -7143428, 1073741853, 0, -7143427, 1073741853, 0, -7143426, 1073741853, 0, -7143425, 1073741853, 0, -7208960, 1073741853, 0, -7208959, 1073741853, 0, -7208958, 1073741853, 0, -7208957, 1073741853, 0, -7208956, 1073741853, 0, -7208955, 1073741853, 0, -7208954, 1073741853, 0, -7208953, 1073741853, 0, -7208952, 1073741853, 0, -7208951, 1073741853, 0, -7208950, 1073741853, 0, -7208949, 1073741853, 0, -7208948, 1073741853, 0, -7208947, 1073741853, 0, -7208946, 1073741853, 0, -7208945, 1073741853, 0, -7208944, 1073741853, 0, -7208943, 1073741853, 0, -7208942, 1073741853, 0, -7208941, 1073741853, 0, -7208940, 1073741853, 0, -7208939, 1073741853, 0, -7208938, 1073741853, 0, -7208937, 1073741853, 0, -7208936, 1073741853, 0, -7208935, 1073741853, 0, -7208934, 1073741853, 0, -7208933, 1073741853, 0, -7208932, 1073741853, 0, -7208931, 1073741853, 0, -7208930, 1073741853, 0, -7208929, 1073741853, 0, -7208928, 1073741853, 0, -7208927, 1073741853, 0, -7208926, 1073741853, 0, -7208925, 1073741853, 0, -7208924, 1073741853, 0, -7208923, 1073741853, 0, -7208922, 1073741853, 0, -7208921, 1073741853, 0, -7208920, 1073741853, 0, -7208919, 1073741853, 0, -7208918, 1073741853, 0, -7208917, 1073741853, 0, -7208916, 1073741853, 0, -7208915, 1073741853, 0, -7208914, 1073741853, 0, -7208913, 1073741853, 0, -7208912, 1073741853, 0, -7208911, 1073741853, 0, -7208910, 1073741853, 0, -7208909, 1073741853, 0, -7208908, 1073741853, 0, -7208907, 1073741853, 0, -7208906, 1073741853, 0, -7208905, 1073741853, 0, -7208904, 1073741853, 0, -7208903, 1073741853, 0, -7208902, 1073741853, 0, -7208901, 1073741853, 0, -7208900, 1073741853, 0, -7208899, 1073741853, 0, -7208898, 1073741853, 0, -7208897, 1073741853, 0, -7208896, 1073741853, 0, -7208895, 1073741853, 0, -7208894, 1073741853, 0, -7208893, 1073741853, 0, -7208892, 1073741853, 0, -7208891, 1073741853, 0, -7208890, 1073741853, 0, -7208889, 1073741853, 0, -7208888, 1073741853, 0, -7208887, 1073741853, 0, -7208886, 1073741853, 0, -7208885, 1073741853, 0, -7208884, 1073741853, 0, -7208883, 1073741853, 0, -7208882, 1073741853, 0, -7208881, 1073741853, 0, -7208880, 1073741853, 0, -7208879, 1073741853, 0, -7208878, 1073741853, 0, -7208877, 1073741853, 0, -7208876, 1073741853, 0, -7208875, 1073741853, 0, -7208874, 1073741853, 0, -7208873, 1073741853, 0, -7208872, 1073741853, 0, -7208871, 1073741853, 0, -7208870, 1073741853, 0, -7208869, 1073741853, 0, -7208868, 1073741853, 0, -7208867, 1073741853, 0, -7208866, 1073741853, 0, -7208865, 1073741853, 0, -7208864, 1073741853, 0, -7208863, 1073741853, 0, -7208862, 1073741853, 0, -7208861, 1073741853, 0, -7208860, 1073741853, 0, -7208859, 1073741853, 0, -7208858, 1073741853, 0, -7208857, 1073741853, 0, -7208856, 1073741853, 0, -7208855, 1073741853, 0, -7077897, 536870941, 0, -7077896, 536870941, 0, -7077895, 536870941, 0, -7077894, 1073741853, 0, -7077893, 1073741853, 0, -7077892, 1073741853, 0, -7077891, 1073741853, 0, -7077890, 1073741853, 0, -7077889, 1073741853, 0, -7143424, 1073741853, 0, -7143423, 1073741853, 0, -7143422, 1073741853, 0, -7143421, 1073741853, 0, -7143420, 1073741853, 0, -7143419, 1073741853, 0, -7143418, 536870949, 0, -7143417, 1073741853, 0, -7143416, 1073741853, 0, -7143415, 1073741853, 0, -7143414, 1073741853, 0, -7143413, 1073741853, 0, -7143412, 1073741853, 0, -7143411, 1073741853, 0, -7143410, 1073741853, 0, -7143409, 1073741853, 0, -7143408, 1073741853, 0, -7143407, 1073741853, 0, -7143406, 1073741853, 0, -7143405, 1073741853, 0, -7143404, 1073741853, 0, -7143403, 1073741853, 0, -7143402, 1073741853, 0, -7143401, 1073741853, 0, -7143400, 1073741853, 0, -7143399, 1073741853, 0, -7143398, 1073741853, 0, -7143397, 1073741853, 0, -7143396, 1073741853, 0, -7143395, 1073741853, 0, -7143394, 1073741853, 0, -7143393, 1073741853, 0, -7143392, 1073741853, 0, -7143391, 1073741853, 0, -7143390, 1073741853, 0, -7143389, 1073741853, 0, -7143388, 1073741853, 0, -7143387, 1073741853, 0, -7143386, 1073741853, 0, -7143385, 1073741853, 0, -7143384, 1073741853, 0, -7143383, 1073741853, 0, -7143382, 1073741853, 0, -7143381, 1073741853, 0, -7143380, 1073741853, 0, -7143379, 1073741853, 0, -7143378, 1073741853, 0, -7143377, 1073741853, 0, -7143376, 1073741853, 0, -7143375, 1073741853, 0, -7143374, 1073741853, 0, -7143373, 1073741853, 0, -7143372, 1073741853, 0, -7143371, 1073741853, 0, -7143370, 1073741853, 0, -7143369, 1073741853, 0, -7143368, 1073741853, 0, -7143367, 1073741853, 0, -7143366, 1073741853, 0, -7143365, 1073741853, 0, -7143364, 1073741853, 0, -7143363, 1073741853, 0, -7143362, 1073741853, 0, -7143361, 1073741853, 0, -7143360, 1073741853, 0, -7143359, 1073741853, 0, -7143358, 1073741853, 0, -7143357, 1073741853, 0, -7143356, 1073741853, 0, -7143355, 1073741853, 0, -7143354, 1073741853, 0, -7143353, 1073741853, 0, -7143352, 1073741853, 0, -7143351, 1073741853, 0, -7143350, 1073741853, 0, -7143349, 1073741853, 0, -7143348, 1073741853, 0, -7143347, 1073741853, 0, -7143346, 1073741853, 0, -7143345, 1073741853, 0, -7143344, 1073741853, 0, -7143343, 1073741853, 0, -7143342, 1073741853, 0, -7143341, 1073741853, 0, -7143340, 1073741853, 0, -7143339, 1073741853, 0, -7143338, 1073741853, 0, -7143337, 1073741853, 0, -7143336, 1073741853, 0, -7143335, 1073741853, 0, -7143334, 1073741853, 0, -7143333, 1073741853, 0, -7143332, 1073741853, 0, -7143331, 1073741853, 0, -7143330, 1073741853, 0, -7143329, 1073741853, 0, -7143328, 1073741853, 0, -7143327, 1073741853, 0, -7143326, 1073741853, 0, -7143325, 1073741853, 0, -7143324, 1073741853, 0, -7143323, 1073741853, 0, -7143322, 1073741853, 0, -7143321, 1073741853, 0, -7143320, 1073741853, 0, -7143319, 1073741853, 0, -7012361, 536870941, 0, -7012360, 536870941, 0, -7012359, 536870941, 0, -7012358, 1073741853, 0, -7012357, 1073741853, 0, -7012356, 1073741853, 0, -7012355, 1073741853, 0, -7012354, 536870949, 0, -7012353, 1073741853, 0, -7077888, 1073741853, 0, -7077887, 1073741853, 0, -7077886, 1073741853, 0, -7077885, 1073741853, 0, -7077884, 1073741853, 0, -7077883, 536870949, 0, -7077882, 536870949, 0, -7077881, 536870949, 0, -7077880, 1073741853, 0, -7077879, 1073741853, 0, -7077878, 1073741853, 0, -7077877, 1073741853, 0, -7077876, 1073741853, 0, -7077875, 1073741853, 0, -7077874, 1073741853, 0, -7077873, 1073741853, 0, -7077872, 1073741853, 0, -7077871, 1073741853, 0, -7077870, 1073741853, 0, -7077869, 1073741853, 0, -7077868, 1073741853, 0, -7077867, 1073741853, 0, -7077866, 1073741853, 0, -7077865, 1073741853, 0, -7077864, 1073741853, 0, -7077863, 1073741853, 0, -7077862, 1073741853, 0, -7077861, 1073741853, 0, -7077860, 1073741853, 0, -7077859, 1073741853, 0, -7077858, 1073741853, 0, -7077857, 1073741853, 0, -7077856, 1073741853, 0, -7077855, 1073741853, 0, -7077854, 1073741853, 0, -7077853, 1073741853, 0, -7077852, 1073741853, 0, -7077851, 1073741853, 0, -7077850, 1073741853, 0, -7077849, 1073741853, 0, -7077848, 1073741853, 0, -7077847, 1073741853, 0, -7077846, 1073741853, 0, -7077845, 1073741853, 0, -7077844, 1073741853, 0, -7077843, 1073741853, 0, -7077842, 1073741853, 0, -7077841, 1073741853, 0, -7077840, 1073741853, 0, -7077839, 1073741853, 0, -7077838, 1073741853, 0, -7077837, 1073741853, 0, -7077836, 1073741853, 0, -7077835, 1073741853, 0, -7077834, 1073741853, 0, -7077833, 1073741853, 0, -7077832, 1073741853, 0, -7077831, 1073741853, 0, -7077830, 1073741853, 0, -7077829, 1073741853, 0, -7077828, 1073741853, 0, -7077827, 1073741853, 0, -7077826, 1073741853, 0, -7077825, 1073741853, 0, -7077824, 1073741853, 0, -7077823, 1073741853, 0, -7077822, 1073741853, 0, -7077821, 1073741853, 0, -7077820, 1073741853, 0, -7077819, 1073741853, 0, -7077818, 1073741853, 0, -7077817, 1073741853, 0, -7077816, 1073741853, 0, -7077815, 1073741853, 0, -7077814, 1073741853, 0, -7077813, 1073741853, 0, -7077812, 1073741853, 0, -7077811, 1073741853, 0, -7077810, 1073741853, 0, -7077809, 1073741853, 0, -7077808, 1073741853, 0, -7077807, 1073741853, 0, -7077806, 1073741853, 0, -7077805, 1073741853, 0, -7077804, 1073741853, 0, -7077803, 1073741853, 0, -7077802, 1073741853, 0, -7077801, 1073741853, 0, -7077800, 1073741853, 0, -7077799, 1073741853, 0, -7077798, 1073741853, 0, -7077797, 1073741853, 0, -7077796, 1073741853, 0, -7077795, 1073741853, 0, -7077794, 1073741853, 0, -7077793, 1073741853, 0, -7077792, 1073741853, 0, -7077791, 1073741853, 0, -7077790, 1073741853, 0, -7077789, 1073741853, 0, -7077788, 1073741853, 0, -7077787, 1073741853, 0, -7077786, 1073741853, 0, -7077785, 1073741853, 0, -7077784, 1073741853, 0, -7077783, 1073741853, 0, -6946825, 536870941, 0, -6946824, 536870941, 0, -6946823, 536870941, 0, -6946822, 1073741853, 0, -6946821, 1073741853, 0, -6946820, 536870949, 0, -6946819, 536870949, 0, -6946818, 536870949, 0, -6946817, 536870949, 0, -7012352, 1073741853, 0, -7012351, 1073741853, 0, -7012350, 1073741853, 0, -7012349, 1073741853, 0, -7012348, 1073741853, 0, -7012347, 536870949, 0, -7012346, 536870949, 0, -7012345, 1073741853, 0, -7012344, 1073741853, 0, -7012343, 1073741853, 0, -7012342, 1073741853, 0, -7012341, 1073741853, 0, -7012340, 1073741853, 0, -7012339, 1073741853, 0, -7012338, 1073741853, 0, -7012337, 1073741853, 0, -7012336, 1073741853, 0, -7012335, 1073741853, 0, -7012334, 1073741853, 0, -7012333, 1073741853, 0, -7012332, 1073741853, 0, -7012331, 1073741853, 0, -7012330, 1073741853, 0, -7012329, 1073741853, 0, -7012328, 1073741853, 0, -7012327, 1073741853, 0, -7012326, 1073741853, 0, -7012325, 1073741853, 0, -7012324, 1073741853, 0, -7012323, 1073741853, 0, -7012322, 1073741853, 0, -7012321, 1073741853, 0, -7012320, 1073741853, 0, -7012319, 1073741853, 0, -7012318, 1073741853, 0, -7012317, 1073741853, 0, -7012316, 1073741853, 0, -7012315, 1073741853, 0, -7012314, 1073741853, 0, -7012313, 1073741853, 0, -7012312, 1073741853, 0, -7012311, 1073741853, 0, -7012310, 1073741853, 0, -7012309, 1073741853, 0, -7012308, 1073741853, 0, -7012307, 1073741853, 0, -7012306, 1073741853, 0, -7012305, 536870953, 0, -7012304, 536870953, 0, -7012303, 1073741853, 0, -7012302, 1073741853, 0, -7012301, 1073741853, 0, -7012300, 1073741853, 0, -7012299, 1073741853, 0, -7012298, 1073741853, 0, -7012297, 1073741853, 0, -7012296, 1073741853, 0, -7012295, 1073741853, 0, -7012294, 1073741853, 0, -7012293, 1073741853, 0, -7012292, 1073741853, 0, -7012291, 1073741853, 0, -7012290, 1073741853, 0, -7012289, 1073741853, 0, -7012288, 1073741853, 0, -7012287, 1073741853, 0, -7012286, 1073741853, 0, -7012285, 1073741853, 0, -7012284, 1073741853, 0, -7012283, 1073741853, 0, -7012282, 1073741853, 0, -7012281, 1073741853, 0, -7012280, 1073741853, 0, -7012279, 1073741853, 0, -7012278, 1073741853, 0, -7012277, 1073741853, 0, -7012276, 1073741853, 0, -7012275, 1073741853, 0, -7012274, 1073741853, 0, -7012273, 1073741853, 0, -7012272, 1073741853, 0, -7012271, 1073741853, 0, -7012270, 1073741853, 0, -7012269, 1073741853, 0, -7012268, 1073741853, 0, -7012267, 1073741853, 0, -7012266, 1073741853, 0, -7012265, 1073741853, 0, -7012264, 1073741853, 0, -7012263, 1073741853, 0, -7012262, 1073741853, 0, -7012261, 1073741853, 0, -7012260, 1073741853, 0, -7012259, 1073741853, 0, -7012258, 1073741853, 0, -7012257, 1073741853, 0, -7012256, 1073741853, 0, -7012255, 1073741853, 0, -7012254, 1073741853, 0, -7012253, 1073741853, 0, -7012252, 1073741853, 0, -7012251, 1073741853, 0, -7012250, 1073741853, 0, -7012249, 1073741853, 0, -7012248, 1073741853, 0, -7012247, 1073741853, 0, -6881289, 536870941, 0, -6881288, 536870941, 0, -6881287, 536870941, 0, -6881286, 1073741853, 0, -6881285, 1073741853, 0, -6881284, 536870953, 0, -6881283, 536870953, 0, -6881282, 536870953, 0, -6881281, 536870953, 0, -6946816, 536870953, 0, -6946815, 536870953, 0, -6946814, 536870953, 0, -6946813, 536870953, 0, -6946812, 536870953, 0, -6946811, 536870953, 0, -6946810, 536870953, 0, -6946809, 536870953, 0, -6946808, 536870953, 0, -6946807, 536870953, 0, -6946806, 536870953, 0, -6946805, 536870953, 0, -6946804, 536870953, 0, -6946803, 536870953, 0, -6946802, 536870953, 0, -6946801, 536870953, 0, -6946800, 536870953, 0, -6946799, 536870953, 0, -6946798, 536870953, 0, -6946797, 536870953, 0, -6946796, 536870953, 0, -6946795, 536870953, 0, -6946794, 536870953, 0, -6946793, 536870953, 0, -6946792, 536870953, 0, -6946791, 536870953, 0, -6946790, 536870953, 0, -6946789, 536870953, 0, -6946788, 536870953, 0, -6946787, 536870953, 0, -6946786, 536870953, 0, -6946785, 536870953, 0, -6946784, 536870953, 0, -6946783, 536870953, 0, -6946782, 536870953, 0, -6946781, 536870953, 0, -6946780, 536870953, 0, -6946779, 536870953, 0, -6946778, 536870953, 0, -6946777, 536870953, 0, -6946776, 536870953, 0, -6946775, 536870953, 0, -6946774, 536870953, 0, -6946773, 536870953, 0, -6946772, 536870953, 0, -6946771, 536870953, 0, -6946770, 536870953, 0, -6946769, 536870953, 0, -6946768, 536870953, 0, -6946767, 536870953, 0, -6946766, 536870953, 0, -6946765, 536870953, 0, -6946764, 536870953, 0, -6946763, 536870953, 0, -6946762, 536870953, 0, -6946761, 1073741853, 0, -6946760, 1073741853, 0, -6946759, 1073741853, 0, -6946758, 1073741853, 0, -6946757, 1073741853, 0, -6946756, 1073741853, 0, -6946755, 1073741853, 0, -6946754, 1073741853, 0, -6946753, 1073741853, 0, -6946752, 1073741853, 0, -6946751, 1073741853, 0, -6946750, 1073741853, 0, -6946749, 1073741853, 0, -6946748, 1073741853, 0, -6946747, 1073741853, 0, -6946746, 1073741853, 0, -6946745, 1073741853, 0, -6946744, 1073741853, 0, -6946743, 1073741853, 0, -6946742, 1073741853, 0, -6946741, 1073741853, 0, -6946740, 1073741853, 0, -6946739, 1073741853, 0, -6946738, 1073741853, 0, -6946737, 1073741853, 0, -6946736, 1073741853, 0, -6946735, 1073741853, 0, -6946734, 1073741853, 0, -6946733, 1073741853, 0, -6946732, 1073741853, 0, -6946731, 1073741853, 0, -6946730, 1073741853, 0, -6946729, 1073741853, 0, -6946728, 1073741853, 0, -6946727, 1073741853, 0, -6946726, 1073741853, 0, -6946725, 1073741853, 0, -6946724, 1073741853, 0, -6946723, 1073741853, 0, -6946722, 1073741853, 0, -6946721, 1073741853, 0, -6946720, 1073741853, 0, -6946719, 1073741853, 0, -6946718, 1073741853, 0, -6946717, 1073741853, 0, -6946716, 1073741853, 0, -6946715, 1073741853, 0, -6946714, 1073741853, 0, -6946713, 1073741853, 0, -6946712, 1073741853, 0, -6946711, 1073741853, 0, -6815753, 536870941, 0, -6815752, 536870941, 0, -6815751, 536870941, 0, -6815750, 1073741853, 0, -6881209, 1073741853, 0, -6881208, 1073741853, 0, -6881207, 1073741853, 0, -6881206, 1073741853, 0, -6881205, 1073741853, 0, -6881204, 1073741853, 0, -6881203, 1073741853, 0, -6881202, 1073741853, 0, -6881201, 1073741853, 0, -6881200, 1073741853, 0, -6881199, 1073741853, 0, -6881198, 1073741853, 0, -6881197, 1073741853, 0, -6881196, 1073741853, 0, -6881195, 1073741853, 0, -6881194, 1073741853, 0, -6881193, 1073741853, 0, -6881192, 1073741853, 0, -6881191, 1073741853, 0, -6881190, 1073741853, 0, -6881189, 1073741853, 0, -6881188, 1073741853, 0, -6881187, 1073741853, 0, -6881186, 1073741853, 0, -6881185, 1073741853, 0, -6881184, 1073741853, 0, -6881183, 1073741853, 0, -6881182, 1073741853, 0, -6881181, 1073741853, 0, -6881180, 1073741853, 0, -6881179, 1073741853, 0, -6881178, 1073741853, 0, -6881177, 1073741853, 0, -6881176, 1073741853, 0, -6881175, 1073741853, 0, -6750217, 536870941, 0, -6750216, 536870941, 0, -6750215, 536870941, 0, -6750214, 1073741853, 0, -6815673, 1073741853, 0, -6815672, 1073741853, 0, -6815671, 1073741853, 0, -6815670, 1073741853, 0, -6815669, 1073741853, 0, -6815668, 1073741853, 0, -6815667, 1073741853, 0, -6815666, 1073741853, 0, -6815665, 1073741853, 0, -6815664, 1073741853, 0, -6815663, 1073741853, 0, -6815662, 1073741853, 0, -6815661, 1073741853, 0, -6815660, 1073741853, 0, -6815659, 1073741853, 0, -6815658, 1073741853, 0, -6815657, 1073741853, 0, -6815656, 1073741853, 0, -6815655, 1073741853, 0, -6815654, 1073741853, 0, -6815653, 1073741853, 0, -6815652, 1073741853, 0, -6815651, 1073741853, 0, -6815650, 1073741853, 0, -6815649, 1073741853, 0, -6815648, 1073741853, 0, -6815647, 1073741853, 0, -6815646, 1073741853, 0, -6815645, 1073741853, 0, -6815644, 1073741853, 0, -6815643, 1073741853, 0, -6815642, 1073741853, 0, -6815641, 1073741853, 0, -6815640, 1073741853, 0, -6815639, 1073741853, 0, -6684681, 536870941, 0, -6684680, 536870941, 0, -6684679, 536870941, 0, -6684678, 1073741853, 0, -6750137, 1073741853, 0, -6750136, 1073741853, 0, -6750135, 1073741853, 0, -6750134, 1073741853, 0, -6750133, 1073741853, 0, -6750132, 1073741853, 0, -6750131, 1073741853, 0, -6750130, 1073741853, 0, -6750129, 1073741853, 0, -6750128, 1073741853, 0, -6750127, 1073741853, 0, -6750126, 1073741853, 0, -6750125, 1073741853, 0, -6750124, 1073741853, 0, -6750123, 1073741853, 0, -6750122, 1073741853, 0, -6750121, 1073741853, 0, -6750120, 1073741853, 0, -6750119, 1073741853, 0, -6750118, 1073741853, 0, -6750117, 1073741853, 0, -6750116, 1073741853, 0, -6750115, 1073741853, 0, -6750114, 1073741853, 0, -6750113, 1073741853, 0, -6750112, 1073741853, 0, -6750111, 1073741853, 0, -6750110, 1073741853, 0, -6750109, 1073741853, 0, -6750108, 1073741853, 0, -6750107, 1073741853, 0, -6750106, 1073741853, 0, -6750105, 1073741853, 0, -6750104, 1073741853, 0, -6750103, 1073741853, 0, -6619145, 536870941, 0, -6619144, 536870941, 0, -6619143, 536870941, 0, -6619142, 1073741853, 0, -6684601, 1073741853, 0, -6684600, 1073741853, 0, -6684599, 1073741853, 0, -6684598, 1073741853, 0, -6684597, 1073741853, 0, -6684596, 1073741853, 0, -6684595, 1073741853, 0, -6684594, 1073741853, 0, -6684593, 1073741853, 0, -6684592, 1073741853, 0, -6684591, 1073741853, 0, -6684590, 1073741853, 0, -6684589, 1073741853, 0, -6684588, 1073741853, 0, -6684587, 1073741853, 0, -6684586, 1073741853, 0, -6684585, 1073741853, 0, -6684584, 1073741853, 0, -6684583, 1073741853, 0, -6684582, 1073741853, 0, -6684581, 1073741853, 0, -6684580, 1073741853, 0, -6684579, 1073741853, 0, -6684578, 1073741853, 0, -6684577, 1073741853, 0, -6684576, 1073741853, 0, -6684575, 1073741853, 0, -6684574, 1073741853, 0, -6684573, 1073741853, 0, -6684572, 1073741853, 0, -6684571, 1073741853, 0, -6684570, 1073741853, 0, -6684569, 1073741853, 0, -6684568, 1073741853, 0, -6684567, 1073741853, 0, -6553609, 536870941, 0, -6553608, 536870941, 0, -6553607, 536870941, 0, -6553606, 1073741853, 0, -6619096, 536870944, 0, -6619065, 1073741853, 0, -6619064, 1073741853, 0, -6619063, 1073741853, 0, -6619062, 1073741853, 0, -6619061, 1073741853, 0, -6619060, 1073741853, 0, -6619059, 1073741853, 0, -6619058, 1073741853, 0, -6619057, 1073741853, 0, -6619056, 1073741853, 0, -6619055, 1073741853, 0, -6619054, 1073741853, 0, -6619053, 1073741853, 0, -6619052, 1073741853, 0, -6619051, 1073741853, 0, -6619050, 1073741853, 0, -6619049, 1073741853, 0, -6619048, 1073741853, 0, -6619047, 1073741853, 0, -6619046, 1073741853, 0, -6619045, 1073741853, 0, -6619044, 1073741853, 0, -6619043, 1073741853, 0, -6619042, 1073741853, 0, -6619041, 1073741853, 0, -6619040, 1073741853, 0, -6619039, 1073741853, 0, -6619038, 1073741853, 0, -6619037, 1073741853, 0, -6619036, 1073741853, 0, -6619035, 1073741853, 0, -6619034, 1073741853, 0, -6619033, 1073741853, 0, -6619032, 1073741853, 0, -6619031, 1073741853, 0, -6488073, 536870941, 0, -6488072, 536870941, 0, -6488071, 536870941, 0, -6488070, 536870949, 0, -6553561, 536870944, 0, -6553560, 1073741862, 0, -6553529, 1073741853, 0, -6553528, 1073741853, 0, -6553527, 1073741853, 0, -6553526, 1073741853, 0, -6553525, 1073741853, 0, -6553524, 1073741853, 0, -6553523, 1073741853, 0, -6553522, 1073741853, 0, -6553521, 1073741853, 0, -6553520, 1073741853, 0, -6553519, 1073741853, 0, -6553518, 1073741853, 0, -6553517, 1073741853, 0, -6553516, 1073741853, 0, -6553515, 1073741853, 0, -6553514, 1073741853, 0, -6553513, 1073741853, 0, -6553512, 1073741853, 0, -6553511, 1073741853, 0, -6553510, 1073741853, 0, -6553509, 1073741853, 0, -6553508, 1073741853, 0, -6553507, 1073741853, 0, -6553506, 1073741853, 0, -6553505, 1073741853, 0, -6553504, 1073741853, 0, -6553503, 1073741853, 0, -6553502, 1073741853, 0, -6553501, 1073741853, 0, -6553500, 1073741853, 0, -6553499, 1073741853, 0, -6553498, 1073741853, 0, -6553497, 1073741853, 0, -6553496, 1073741853, 0, -6553495, 1073741853, 0, -6422537, 536870941, 0, -6422536, 536870941, 0, -6422535, 536870941, 0, -6422534, 536870949, 0, -6488026, 536870944, 0, -6488025, 536870949, 0, -6488024, 1073741862, 0, -6487993, 1073741853, 0, -6487992, 1073741853, 0, -6487991, 1073741853, 0, -6487990, 1073741853, 0, -6487989, 1073741853, 0, -6487988, 1073741853, 0, -6487987, 1073741853, 0, -6487986, 1073741853, 0, -6487985, 1073741853, 0, -6487984, 1073741853, 0, -6487983, 1073741853, 0, -6487982, 1073741853, 0, -6487981, 1073741853, 0, -6487980, 1073741853, 0, -6487979, 1073741853, 0, -6487978, 1073741853, 0, -6487977, 1073741853, 0, -6487976, 1073741853, 0, -6487975, 1073741853, 0, -6487974, 1073741853, 0, -6487973, 1073741853, 0, -6487972, 1073741853, 0, -6487971, 1073741853, 0, -6487970, 1073741853, 0, -6487969, 1073741853, 0, -6487968, 1073741853, 0, -6487967, 1073741853, 0, -6487966, 1073741853, 0, -6487965, 1073741853, 0, -6487964, 1073741853, 0, -6487963, 1073741853, 0, -6487962, 1073741853, 0, -6487961, 1073741853, 0, -6487960, 1073741853, 0, -6487959, 1073741853, 0, -6357001, 536870941, 0, -6357000, 536870941, 0, -6356999, 536870941, 0, -6356998, 1073741853, 0, -6422491, 536870944, 0, -6422490, 536870949, 0, -6422489, 536870949, 0, -6422488, 1073741862, 0, -6422457, 1073741853, 0, -6422456, 1073741853, 0, -6422455, 1073741853, 0, -6422454, 1073741853, 0, -6422453, 1073741853, 0, -6422452, 1073741853, 0, -6422451, 1073741853, 0, -6422450, 1073741853, 0, -6422449, 1073741853, 0, -6422448, 1073741853, 0, -6422447, 1073741853, 0, -6422446, 1073741853, 0, -6422445, 1073741853, 0, -6422444, 1073741853, 0, -6422443, 1073741853, 0, -6422442, 1073741853, 0, -6422441, 1073741853, 0, -6422440, 1073741853, 0, -6422439, 1073741853, 0, -6422438, 1073741853, 0, -6422437, 1073741853, 0, -6422436, 1073741853, 0, -6422435, 1073741853, 0, -6422434, 1073741853, 0, -6422433, 1073741853, 0, -6422432, 1073741853, 0, -6422431, 1073741853, 0, -6422430, 1073741853, 0, -6422429, 1073741853, 0, -6422428, 1073741853, 0, -6422427, 1073741853, 0, -6422426, 1073741853, 0, -6422425, 1073741853, 0, -6422424, 1073741853, 0, -6422423, 1073741853, 0, -6291465, 536870941, 0, -6291464, 536870941, 0, -6291463, 536870941, 0, -6291462, 1073741853, 0, -6356956, 536870944, 0, -6356955, 536870949, 0, -6356954, 536870949, 0, -6356953, 536870949, 0, -6356952, 1073741862, 0, -6356921, 1073741853, 0, -6356920, 1073741853, 0, -6356919, 1073741853, 0, -6356918, 1073741853, 0, -6356917, 1073741853, 0, -6356916, 1073741853, 0, -6356915, 1073741853, 0, -6356914, 1073741853, 0, -6356913, 1073741853, 0, -6356912, 1073741853, 0, -6356911, 1073741853, 0, -6356910, 1073741853, 0, -6356909, 1073741853, 0, -6356908, 1073741853, 0, -6356907, 1073741853, 0, -6356906, 1073741853, 0, -6356905, 1073741853, 0, -6356904, 1073741853, 0, -6356903, 1073741853, 0, -6356902, 1073741853, 0, -6356901, 1073741853, 0, -6356900, 1073741853, 0, -6356899, 1073741853, 0, -6356898, 1073741853, 0, -6356897, 1073741853, 0, -6356896, 1073741853, 0, -6356895, 1073741853, 0, -6356894, 1073741853, 0, -6356893, 1073741853, 0, -6356892, 1073741853, 0, -6356891, 1073741853, 0, -6356890, 1073741853, 0, -6356889, 1073741853, 0, -6356888, 1073741853, 0, -6356887, 1073741853, 0, -6225929, 536870941, 0, -6225928, 536870941, 0, -6225927, 536870941, 0, -6225926, 1073741853, 0, -6291421, 536870944, 0, -6291420, 536870949, 0, -6291419, 536870949, 0, -6291418, 536870949, 0, -6291417, 536870949, 0, -6291416, 1073741862, 0, -6291385, 1073741853, 0, -6291384, 1073741853, 0, -6291383, 1073741853, 0, -6291382, 1073741853, 0, -6291381, 1073741853, 0, -6291380, 1073741853, 0, -6291379, 1073741853, 0, -6291378, 1073741853, 0, -6291377, 1073741853, 0, -6291376, 1073741853, 0, -6291375, 1073741853, 0, -6291374, 1073741853, 0, -6291373, 1073741853, 0, -6291372, 1073741853, 0, -6291371, 1073741853, 0, -6291370, 1073741853, 0, -6291369, 1073741853, 0, -6291368, 1073741853, 0, -6291367, 1073741853, 0, -6291366, 1073741853, 0, -6291365, 1073741853, 0, -6291364, 1073741853, 0, -6291363, 1073741853, 0, -6291362, 1073741853, 0, -6291361, 1073741853, 0, -6291360, 1073741853, 0, -6291359, 1073741853, 0, -6291358, 1073741853, 0, -6291357, 1073741853, 0, -6291356, 1073741853, 0, -6291355, 1073741853, 0, -6291354, 1073741853, 0, -6291353, 1073741853, 0, -6291352, 1073741853, 0, -6291351, 1073741853, 0, -6160393, 536870941, 0, -6160392, 536870941, 0, -6160391, 536870941, 0, -6160390, 1073741853, 0, -6225916, 536870945, 0, -6225915, 536870944, 0, -6225914, 536870943, 0, -6225910, 536870946, 0, -6225909, 536870944, 0, -6225908, 536870943, 0, -6225904, 536870946, 0, -6225903, 536870944, 0, -6225902, 536870943, 0, -6225898, 536870946, 0, -6225897, 536870944, 0, -6225896, 536870943, 0, -6225892, 536870946, 0, -6225891, 536870944, 0, -6225890, 536870943, 0, -6225886, 536870946, 0, -6225885, 536870953, 0, -6225884, 536870953, 0, -6225883, 536870953, 0, -6225882, 536870953, 0, -6225881, 536870953, 0, -6225880, 536870952, 0, -6225849, 1073741853, 0, -6225848, 1073741853, 0, -6225847, 1073741853, 0, -6225846, 1073741853, 0, -6225845, 1073741853, 0, -6225844, 1073741853, 0, -6225843, 1073741853, 0, -6225842, 1073741853, 0, -6225841, 1073741853, 0, -6225840, 1073741853, 0, -6225839, 1073741853, 0, -6225838, 1073741853, 0, -6225837, 1073741853, 0, -6225836, 1073741853, 0, -6225835, 1073741853, 0, -6225834, 1073741853, 0, -6225833, 1073741853, 0, -6225832, 1073741853, 0, -6225831, 1073741853, 0, -6225830, 1073741853, 0, -6225829, 1073741853, 0, -6225828, 1073741853, 0, -6225827, 1073741853, 0, -6225826, 1073741853, 0, -6225825, 1073741853, 0, -6225824, 1073741853, 0, -6225823, 1073741853, 0, -6225822, 1073741853, 0, -6225821, 1073741853, 0, -6225820, 1073741853, 0, -6225819, 1073741853, 0, -6225818, 1073741853, 0, -6225817, 1073741853, 0, -6225816, 1073741853, 0, -6225815, 1073741853, 0, -6094857, 1073741853, 0, -6094856, 1073741853, 0, -6094855, 1073741853, 0, -6094854, 1073741854, 0, -6160380, 536870947, 0, -6160374, 536870947, 0, -6160368, 536870947, 0, -6160362, 536870947, 0, -6160356, 536870947, 0, -6160313, 1073741853, 0, -6160312, 1073741853, 0, -6160311, 1073741853, 0, -6160310, 1073741853, 0, -6160309, 1073741853, 0, -6160308, 1073741853, 0, -6160307, 1073741853, 0, -6160306, 1073741853, 0, -6160305, 1073741853, 0, -6160304, 1073741853, 0, -6160303, 1073741853, 0, -6160302, 1073741853, 0, -6160301, 0, 0, -6160300, 0, 0, -6160299, 0, 0, -6160298, 1073741853, 0, -6160297, 1073741853, 0, -6160296, 1073741853, 0, -6160295, 1073741853, 0, -6160294, 1073741853, 0, -6160293, 1073741853, 0, -6160292, 1073741853, 0, -6160291, 1073741853, 0, -6160290, 1073741853, 0, -6160289, 1073741853, 0, -6160288, 1073741853, 0, -6160287, 1073741853, 0, -6160286, 1073741853, 0, -6160285, 1073741853, 0, -6160284, 1073741853, 0, -6160283, 1073741853, 0, -6160282, 1073741853, 0, -6160281, 1073741853, 0, -6160280, 1073741853, 0, -6160279, 1073741853, 0, -6029321, 1073741853, 0, -6029320, 1073741853, 0, -6029319, 1073741853, 0, -6029318, 1073741854, 0, -6094777, 1073741853, 0, -6094776, 1073741853, 0, -6094775, 1073741853, 0, -6094774, 1073741853, 0, -6094773, 1073741853, 0, -6094772, 1073741853, 0, -6094771, 1073741853, 0, -6094770, 1073741853, 0, -6094769, 1073741853, 0, -6094768, 1073741853, 0, -6094767, 1073741853, 0, -6094766, 1073741853, 0, -6094765, 1073741853, 0, -6094764, 1073741853, 0, -6094763, 1073741853, 0, -6094762, 1073741853, 0, -6094761, 1073741853, 0, -6094760, 1073741853, 0, -6094759, 1073741853, 0, -6094758, 1073741853, 0, -6094757, 1073741853, 0, -6094756, 1073741853, 0, -6094755, 1073741853, 0, -6094754, 1073741853, 0, -6094753, 1073741853, 0, -6094752, 1073741853, 0, -6094751, 1073741853, 0, -6094750, 1073741853, 0, -6094749, 1073741853, 0, -6094748, 1073741853, 0, -6094747, 1073741853, 0, -6094746, 1073741853, 0, -6094745, 1073741853, 0, -6094744, 1073741853, 0, -6094743, 1073741853, 0, -5963785, 1073741853, 0, -5963784, 1073741853, 0, -5963783, 1073741853, 0, -5963782, 1073741854, 0, -6029241, 1073741853, 0, -6029240, 1073741853, 0, -6029239, 1073741853, 0, -6029238, 1073741853, 0, -6029237, 1073741853, 0, -6029236, 1073741853, 0, -6029235, 1073741853, 0, -6029234, 1073741853, 0, -6029233, 1073741853, 0, -6029232, 1073741853, 0, -6029231, 1073741853, 0, -6029230, 1073741853, 0, -6029229, 1073741853, 0, -6029228, 1073741853, 0, -6029227, 1073741853, 0, -6029226, 1073741853, 0, -6029225, 1073741853, 0, -6029224, 1073741853, 0, -6029223, 1073741853, 0, -6029222, 1073741853, 0, -6029221, 1073741853, 0, -6029220, 1073741853, 0, -6029219, 1073741853, 0, -6029218, 1073741853, 0, -6029217, 1073741853, 0, -6029216, 1073741853, 0, -6029215, 1073741853, 0, -6029214, 1073741853, 0, -6029213, 1073741853, 0, -6029212, 1073741853, 0, -6029211, 1073741853, 0, -6029210, 1073741853, 0, -6029209, 1073741853, 0, -6029208, 1073741853, 0, -6029207, 1073741853, 0, -5898249, 1073741853, 0, -5898248, 1073741853, 0, -5898247, 1073741853, 0, -5898246, 1073741854, 0, -5963705, 1073741853, 0, -5963704, 1073741853, 0, -5963703, 1073741853, 0, -5963702, 1073741853, 0, -5963701, 1073741853, 0, -5963700, 1073741853, 0, -5963699, 1073741853, 0, -5963698, 1073741853, 0, -5963697, 7, 0, -5963696, 7, 0, -5963695, 1073741853, 0, -5963694, 1073741853, 0, -5963693, 1073741853, 0, -5963692, 1073741853, 0, -5963691, 1073741853, 0, -5963690, 1073741853, 0, -5963689, 0, 0, -5963688, 1073741853, 0, -5963687, 1073741853, 0, -5963686, 1073741853, 0, -5963685, 1073741853, 0, -5963684, 1073741853, 0, -5963683, 1073741853, 0, -5963682, 1073741853, 0, -5963681, 1073741853, 0, -5963680, 1073741853, 0, -5963679, 1073741853, 0, -5963678, 1073741853, 0, -5963677, 1073741853, 0, -5963676, 1073741853, 0, -5963675, 1073741853, 0, -5963674, 1073741853, 0, -5963673, 1073741853, 0, -5963672, 1073741853, 0, -5963671, 1073741853, 0, -5832713, 1073741853, 0, -5832712, 1073741853, 0, -5832711, 1073741853, 0, -5832710, 1073741854, 0, -5832705, 17, 0, -5898240, 19, 0, -5898169, 1073741853, 0, -5898168, 1073741853, 0, -5898167, 1073741853, 0, -5898166, 1073741853, 0, -5898165, 1073741853, 0, -5898164, 1073741853, 0, -5898163, 1073741853, 0, -5898162, 1073741853, 0, -5898161, 1073741853, 0, -5898160, 1073741853, 0, -5898159, 1073741853, 0, -5898158, 1073741853, 0, -5898157, 1073741853, 0, -5898156, 1073741853, 0, -5898155, 1073741853, 0, -5898154, 1073741853, 0, -5898153, 1073741853, 0, -5898152, 1073741853, 0, -5898151, 1073741853, 0, -5898150, 1073741853, 0, -5898149, 1073741853, 0, -5898148, 1073741853, 0, -5898147, 1073741853, 0, -5898146, 1073741853, 0, -5898145, 1073741853, 0, -5898144, 1073741853, 0, -5898143, 1073741853, 0, -5898142, 1073741853, 0, -5898141, 1073741853, 0, -5898140, 1073741853, 0, -5898139, 1073741853, 0, -5898138, 1073741853, 0, -5898137, 1073741853, 0, -5898136, 1073741853, 0, -5898135, 1073741853, 0, -5767177, 1073741853, 0, -5767176, 1073741853, 0, -5767175, 1073741853, 0, -5767174, 1073741854, 0, -5767169, 9, 0, -5832704, 12, 0, -5832633, 1073741853, 0, -5832632, 1073741853, 0, -5832631, 1073741853, 0, -5832630, 1073741853, 0, -5832629, 1073741853, 0, -5832628, 1073741853, 0, -5832627, 1073741853, 0, -5832626, 1073741853, 0, -5832625, 1073741853, 0, -5832624, 1073741853, 0, -5832623, 1073741853, 0, -5832622, 1073741853, 0, -5832621, 1073741853, 0, -5832620, 1073741853, 0, -5832619, 1073741853, 0, -5832618, 1073741853, 0, -5832617, 1073741853, 0, -5832616, 1073741853, 0, -5832615, 1073741853, 0, -5832614, 1073741853, 0, -5832613, 1073741853, 0, -5832612, 1073741853, 0, -5832611, 1073741853, 0, -5832610, 1073741853, 0, -5832609, 1073741853, 0, -5832608, 1073741853, 0, -5832607, 1073741853, 0, -5832606, 1073741853, 0, -5832605, 1073741853, 0, -5832604, 1073741853, 0, -5832603, 1073741853, 0, -5832602, 1073741853, 0, -5832601, 1073741853, 0, -5832600, 1073741853, 0, -5832599, 1073741853, 0, -5701641, 1073741853, 0, -5701640, 1073741853, 0, -5701639, 1073741853, 0, -5701638, 1073741854, 0, -5767097, 1073741853, 0, -5767096, 1073741853, 0, -5767095, 1073741853, 0, -5767094, 1073741853, 0, -5767093, 1073741853, 0, -5767092, 1073741853, 0, -5767091, 1073741853, 0, -5767090, 1073741853, 0, -5767089, 1073741853, 0, -5767088, 1073741853, 0, -5767087, 1073741853, 0, -5767086, 1073741853, 0, -5767085, 1073741853, 0, -5767084, 1073741853, 0, -5767083, 1073741853, 0, -5767082, 1073741853, 0, -5767081, 1073741853, 0, -5767080, 1073741853, 0, -5767079, 1073741853, 0, -5767078, 1073741853, 0, -5767077, 1073741853, 0, -5767076, 1073741853, 0, -5767075, 1073741853, 0, -5767074, 1073741853, 0, -5767073, 1073741853, 0, -5767072, 1073741853, 0, -5767071, 1073741853, 0, -5767070, 1073741853, 0, -5767069, 1073741853, 0, -5767068, 1073741853, 0, -5767067, 1073741853, 0, -5767066, 1073741853, 0, -5767065, 1073741853, 0, -5767064, 1073741853, 0, -5767063, 1073741853, 0, -5636105, 1073741853, 0, -5636104, 1073741853, 0, -5636103, 1073741853, 0, -5636102, 1073741854, 0, -5701627, 17, 0, -5701626, 18, 0, -5701625, 18, 0, -5701624, 19, 0, -5701561, 1073741853, 0, -5701560, 1073741853, 0, -5701559, 1073741853, 0, -5701558, 1073741853, 0, -5701557, 1073741853, 0, -5701556, 1073741853, 0, -5701555, 1073741853, 0, -5701554, 1073741853, 0, -5701553, 1073741853, 0, -5701552, 1073741853, 0, -5701551, 1073741853, 0, -5701550, 1073741853, 0, -5701549, 1073741853, 0, -5701548, 1073741853, 0, -5701547, 1073741853, 0, -5701546, 1073741853, 0, -5701545, 1073741853, 0, -5701544, 1073741853, 0, -5701543, 1073741853, 0, -5701542, 1073741853, 0, -5701541, 1073741853, 0, -5701540, 1073741853, 0, -5701539, 1073741853, 0, -5701538, 1073741853, 0, -5701537, 1073741853, 0, -5701536, 1073741853, 0, -5701535, 1073741853, 0, -5701534, 1073741853, 0, -5701533, 1073741853, 0, -5701532, 1073741853, 0, -5701531, 1073741853, 0, -5701530, 1073741853, 0, -5701529, 1073741853, 0, -5701528, 1073741853, 0, -5701527, 1073741853, 0, -5570569, 1073741853, 0, -5570568, 1073741853, 0, -5570567, 1073741853, 0, -5570566, 1073741854, 0, -5636096, 536870931, 0, -5636095, 536870930, 0, -5636094, 536870930, 0, -5636093, 536870929, 0, -5636091, 11, 0, -5636090, 11, 0, -5636089, 11, 0, -5636088, 11, 0, -5636085, 17, 0, -5636084, 18, 0, -5636083, 19, 0, -5636025, 1073741853, 0, -5636024, 1073741853, 0, -5636023, 1073741853, 0, -5636022, 1073741853, 0, -5636021, 1073741853, 0, -5636020, 1073741853, 0, -5636019, 1073741853, 0, -5636018, 1073741853, 0, -5636017, 1073741853, 0, -5636016, 1073741853, 0, -5636015, 1073741853, 0, -5636014, 1073741853, 0, -5636013, 1073741853, 0, -5636012, 1073741853, 0, -5636011, 1073741853, 0, -5636010, 1073741853, 0, -5636009, 1073741853, 0, -5636008, 1073741853, 0, -5636007, 1073741853, 0, -5636006, 1073741853, 0, -5636005, 1073741853, 0, -5636004, 1073741853, 0, -5636003, 1073741853, 0, -5636002, 1073741853, 0, -5636001, 1073741853, 0, -5636000, 1073741853, 0, -5635999, 1073741853, 0, -5635998, 1073741853, 0, -5635997, 1073741853, 0, -5635996, 1073741853, 0, -5635995, 1073741853, 0, -5635994, 1073741853, 0, -5635993, 1073741853, 0, -5635992, 1073741853, 0, -5635991, 1073741853, 0, -5505033, 1073741853, 0, -5505032, 1073741853, 0, -5505031, 1073741853, 0, -5505030, 1073741854, 0, -5570560, 536870920, 0, -5570559, 536870919, 0, -5570558, 536870919, 0, -5570557, 536870918, 0, -5570549, 9, 0, -5570548, 11, 0, -5570547, 12, 0, -5570489, 1073741853, 0, -5570488, 1073741853, 0, -5570487, 1073741853, 0, -5570486, 1073741853, 0, -5570485, 1073741853, 0, -5570484, 1073741853, 0, -5570483, 1073741853, 0, -5570482, 1073741853, 0, -5570481, 1073741853, 0, -5570480, 1073741853, 0, -5570479, 1073741853, 0, -5570478, 1073741853, 0, -5570477, 1073741853, 0, -5570476, 1073741853, 0, -5570475, 1073741853, 0, -5570474, 1073741853, 0, -5570473, 1073741853, 0, -5570472, 1073741853, 0, -5570471, 1073741853, 0, -5570470, 1073741853, 0, -5570469, 1073741853, 0, -5570468, 1073741853, 0, -5570467, 1073741853, 0, -5570466, 1073741853, 0, -5570465, 1073741853, 0, -5570464, 1073741853, 0, -5570463, 1073741853, 0, -5570462, 1073741853, 0, -5570461, 1073741853, 0, -5570460, 1073741853, 0, -5570459, 1073741853, 0, -5570458, 1073741853, 0, -5570457, 1073741853, 0, -5570456, 1073741853, 0, -5570455, 1073741853, 0, -5439497, 1073741853, 0, -5439496, 1073741853, 0, -5439495, 1073741853, 0, -5439494, 1073741854, 0, -5505024, 536870920, 0, -5505023, 536870919, 0, -5505022, 536870919, 0, -5505021, 536870918, 0, -5505007, 1, 0, -5505006, 4, 0, -5505005, 4, 0, -5505004, 4, 0, -5505003, 5, 0, -5504953, 1073741853, 0, -5504952, 1073741853, 0, -5504951, 1073741853, 0, -5504950, 1073741853, 0, -5504949, 1073741853, 0, -5504948, 1073741853, 0, -5504947, 1073741853, 0, -5504946, 1073741853, 0, -5504945, 1073741853, 0, -5504944, 1073741853, 0, -5504943, 1073741853, 0, -5504942, 1073741853, 0, -5504941, 1073741853, 0, -5504940, 1073741853, 0, -5504939, 1073741853, 0, -5504938, 1073741853, 0, -5504937, 1073741853, 0, -5504936, 1073741853, 0, -5504935, 1073741853, 0, -5504934, 1073741853, 0, -5504933, 1073741853, 0, -5504932, 1073741853, 0, -5504931, 1073741853, 0, -5504930, 1073741853, 0, -5504929, 1073741853, 0, -5504928, 1073741853, 0, -5504927, 1073741853, 0, -5504926, 1073741853, 0, -5504925, 1073741853, 0, -5504924, 1073741853, 0, -5504923, 1073741853, 0, -5504922, 1073741853, 0, -5504921, 1073741853, 0, -5504920, 1073741853, 0, -5504919, 1073741853, 0, -5373962, 1073741853, 0, -5373961, 1073741853, 0, -5373960, 1073741853, 0, -5373959, 1073741853, 0, -5373958, 1073741854, 0, -5439488, 536870920, 0, -5439487, 536870919, 0, -5439486, 536870919, 0, -5439485, 536870918, 0, -5439471, 6, 0, -5439470, 7, 0, -5439469, 7, 0, -5439468, 7, 0, -5439467, 8, 0, -5439464, 17, 0, -5439463, 18, 0, -5439462, 18, 0, -5439461, 18, 0, -5439460, 19, 0, -5439417, 1073741853, 0, -5439416, 1073741853, 0, -5439415, 1073741853, 0, -5439414, 1073741853, 0, -5439413, 1073741853, 0, -5439412, 1073741853, 0, -5439411, 1073741853, 0, -5439410, 1073741853, 0, -5439409, 1073741853, 0, -5439408, 1073741853, 0, -5439407, 1073741853, 0, -5439406, 1073741853, 0, -5439405, 1073741853, 0, -5439404, 1073741853, 0, -5439403, 1073741853, 0, -5439402, 1073741853, 0, -5439401, 1073741853, 0, -5439400, 1073741853, 0, -5439399, 1073741853, 0, -5439398, 1073741853, 0, -5439397, 1073741853, 0, -5439396, 1073741853, 0, -5439395, 1073741853, 0, -5439394, 1073741853, 0, -5439393, 1073741853, 0, -5439392, 1073741853, 0, -5439391, 1073741853, 0, -5439390, 1073741853, 0, -5439389, 1073741853, 0, -5439388, 1073741853, 0, -5439387, 1073741853, 0, -5439386, 1073741853, 0, -5439385, 1073741853, 0, -5439384, 1073741853, 0, -5439383, 1073741853, 0, -5308426, 1073741853, 0, -5308425, 1073741853, 0, -5308424, 1073741853, 0, -5308423, 1073741853, 0, -5308422, 1073741854, 0, -5373952, 536870924, 0, -5373951, 536870922, 0, -5373950, 536870922, 0, -5373949, 536870921, 0, -5373935, 9, 0, -5373934, 11, 0, -5373933, 11, 0, -5373932, 11, 0, -5373931, 12, 0, -5373928, 9, 0, -5373927, 10, 0, -5373926, 10, 0, -5373925, 10, 0, -5373924, 12, 0, -5373881, 1073741853, 0, -5373880, 1073741853, 0, -5373879, 1073741853, 0, -5373878, 1073741853, 0, -5373877, 1073741853, 0, -5373876, 1073741853, 0, -5373875, 1073741853, 0, -5373874, 1073741853, 0, -5373873, 1073741853, 0, -5373872, 1073741853, 0, -5373871, 1073741853, 0, -5373870, 1073741853, 0, -5373869, 1073741853, 0, -5373868, 1073741853, 0, -5373867, 1073741853, 0, -5373866, 1073741853, 0, -5373865, 1073741853, 0, -5373864, 1073741853, 0, -5373863, 1073741853, 0, -5373862, 1073741853, 0, -5373861, 1073741853, 0, -5373860, 1073741853, 0, -5373859, 1073741853, 0, -5373858, 1073741853, 0, -5373857, 1073741853, 0, -5373856, 1073741853, 0, -5373855, 1073741853, 0, -5373854, 1073741853, 0, -5373853, 1073741853, 0, -5373852, 1073741853, 0, -5373851, 1073741853, 0, -5373850, 1073741853, 0, -5373849, 1073741853, 0, -5373848, 1073741853, 0, -5373847, 1073741853, 0, -5242889, 1073741853, 0, -5242888, 1073741853, 0, -5242887, 1073741853, 0, -5242886, 1073741854, 0, -5308345, 1073741853, 0, -5308344, 1073741853, 0, -5308343, 1073741853, 0, -5308342, 1073741853, 0, -5308341, 1073741853, 0, -5308340, 1073741853, 0, -5308339, 1073741853, 0, -5308338, 1073741853, 0, -5308337, 1073741853, 0, -5308336, 1073741853, 0, -5308335, 1073741853, 0, -5308334, 1073741853, 0, -5308333, 1073741853, 0, -5308332, 1073741853, 0, -5308331, 1073741853, 0, -5308330, 1073741853, 0, -5308329, 1073741853, 0, -5308328, 1073741853, 0, -5308327, 1073741853, 0, -5308326, 1073741853, 0, -5308325, 1073741853, 0, -5308324, 1073741853, 0, -5308323, 1073741853, 0, -5308322, 1073741853, 0, -5308321, 1073741853, 0, -5308320, 1073741853, 0, -5308319, 1073741853, 0, -5308318, 1073741853, 0, -5308317, 1073741853, 0, -5308316, 1073741853, 0, -5308315, 1073741853, 0, -5308314, 1073741853, 0, -5308313, 1073741853, 0, -5308312, 1073741853, 0, -5308311, 1073741853, 0, -5177353, 1073741853, 0, -5177352, 1073741853, 0, -5177351, 1073741853, 0, -5177350, 1073741854, 0, -5242871, 536870917, 0, -5242870, 536870916, 0, -5242869, 536870916, 0, -5242868, 536870913, 0, -5242851, 536870917, 0, -5242850, 536870916, 0, -5242849, 536870916, 0, -5242848, 536870916, 0, -5242847, 536870916, 0, -5242846, 536870915, 0, -5242839, 1, 0, -5242838, 4, 0, -5242837, 4, 0, -5242836, 5, 0, -5242826, 3, 0, -5242825, 4, 0, -5242824, 4, 0, -5242823, 4, 0, -5242809, 1073741853, 0, -5242808, 1073741853, 0, -5242807, 1073741853, 0, -5242806, 1073741853, 0, -5242805, 1073741853, 0, -5242804, 1073741853, 0, -5242803, 1073741853, 0, -5242802, 1073741853, 0, -5242801, 1073741853, 0, -5242800, 1073741853, 0, -5242799, 1073741853, 0, -5242798, 1073741853, 0, -5242797, 1073741853, 0, -5242796, 1073741853, 0, -5242795, 1073741853, 0, -5242794, 1073741853, 0, -5242793, 1073741853, 0, -5242792, 1073741853, 0, -5242791, 1073741853, 0, -5242790, 1073741853, 0, -5242789, 1073741853, 0, -5242788, 1073741853, 0, -5242787, 1073741853, 0, -5242786, 1073741853, 0, -5242785, 1073741853, 0, -5242784, 1073741853, 0, -5242783, 1073741853, 0, -5242782, 1073741853, 0, -5242781, 1073741853, 0, -5242780, 1073741853, 0, -5242779, 1073741853, 0, -5242778, 1073741853, 0, -5242777, 1073741853, 0, -5242776, 1073741853, 0, -5242775, 1073741853, 0, -5111817, 1073741853, 0, -5111816, 1073741853, 0, -5111815, 1073741853, 0, -5111814, 1073741854, 0, -5177341, 536870931, 0, -5177340, 536870930, 0, -5177339, 536870930, 0, -5177338, 536870929, 0, -5177335, 536870924, 0, -5177334, 536870922, 0, -5177333, 536870922, 0, -5177332, 536870921, 0, -5177315, 536870920, 0, -5177314, 536870919, 0, -5177313, 536870919, 0, -5177312, 536870919, 0, -5177311, 536870919, 0, -5177310, 536870918, 0, -5177308, 536870917, 0, -5177307, 536870916, 0, -5177306, 536870916, 0, -5177305, 536870915, 0, -5177303, 6, 0, -5177302, 7, 0, -5177301, 7, 0, -5177300, 7, 0, -5177290, 7, 0, -5177289, 7, 0, -5177288, 7, 0, -5177287, 7, 0, -5177273, 1073741853, 0, -5177272, 1073741853, 0, -5177271, 1073741853, 0, -5177270, 1073741853, 0, -5177269, 1073741853, 0, -5177268, 1073741853, 0, -5177267, 1073741853, 0, -5177266, 1073741853, 0, -5177265, 1073741853, 0, -5177264, 1073741853, 0, -5177263, 1073741853, 0, -5177262, 1073741853, 0, -5177261, 1073741853, 0, -5177260, 1073741853, 0, -5177259, 1073741853, 0, -5177258, 1073741853, 0, -5177257, 1073741853, 0, -5177256, 1073741853, 0, -5177255, 1073741853, 0, -5177254, 1073741853, 0, -5177253, 1073741853, 0, -5177252, 1073741853, 0, -5177251, 1073741853, 0, -5177250, 1073741853, 0, -5177249, 1073741853, 0, -5177248, 1073741853, 0, -5177247, 1073741853, 0, -5177246, 1073741853, 0, -5177245, 1073741853, 0, -5177244, 1073741853, 0, -5177243, 1073741853, 0, -5177242, 1073741853, 0, -5177241, 1073741853, 0, -5177240, 1073741853, 0, -5177239, 1073741853, 0, -5046281, 1073741853, 0, -5046280, 1073741853, 0, -5046279, 1073741853, 0, -5046278, 1073741854, 0, -5111805, 536870924, 0, -5111804, 536870923, 0, -5111803, 536870923, 0, -5111802, 536870921, 0, -5111779, 536870920, 0, -5111778, 536870919, 0, -5111777, 536870919, 0, -5111776, 536870919, 0, -5111775, 536870919, 0, -5111774, 536870918, 0, -5111772, 536870924, 0, -5111771, 536870922, 0, -5111770, 536870922, 0, -5111769, 536870921, 0, -5111767, 6, 0, -5111766, 7, 0, -5111765, 7, 0, -5111764, 7, 0, -5111754, 7, 0, -5111753, 7, 0, -5111752, 7, 0, -5111751, 7, 0, -5111737, 1073741853, 0, -5111736, 1073741853, 0, -5111735, 1073741853, 0, -5111734, 1073741853, 0, -5111733, 1073741853, 0, -5111732, 1073741853, 0, -5111731, 1073741853, 0, -5111730, 1073741853, 0, -5111729, 1073741853, 0, -5111728, 1073741853, 0, -5111727, 1073741853, 0, -5111726, 1073741853, 0, -5111725, 1073741853, 0, -5111724, 1073741853, 0, -5111723, 1073741853, 0, -5111722, 1073741853, 0, -5111721, 1073741853, 0, -5111720, 1073741853, 0, -5111719, 1073741853, 0, -5111718, 1073741853, 0, -5111717, 1073741853, 0, -5111716, 1073741853, 0, -5111715, 1073741853, 0, -5111714, 1073741853, 0, -5111713, 1073741853, 0, -5111712, 1073741853, 0, -5111711, 1073741853, 0, -5111710, 1073741853, 0, -5111709, 1073741853, 0, -5111708, 1073741853, 0, -5111707, 1073741853, 0, -5111706, 1073741853, 0, -5111705, 1073741853, 0, -5111704, 1073741853, 0, -5111703, 1073741853, 0, -4980745, 1073741853, 0, -4980744, 1073741853, 0, -4980743, 1073741853, 0, -4980742, 1073741854, 0, -5046243, 536870924, 0, -5046242, 536870922, 0, -5046241, 536870922, 0, -5046240, 536870922, 0, -5046239, 536870922, 0, -5046238, 536870921, 0, -5046231, 6, 0, -5046230, 7, 0, -5046229, 7, 0, -5046228, 7, 0, -5046227, 4, 0, -5046226, 4, 0, -5046225, 4, 0, -5046224, 4, 0, -5046223, 4, 0, -5046222, 4, 0, -5046221, 4, 0, -5046220, 4, 0, -5046219, 4, 0, -5046218, 7, 0, -5046217, 7, 0, -5046216, 7, 0, -5046215, 7, 0, -5046201, 1073741853, 0, -5046200, 1073741853, 0, -5046199, 1073741853, 0, -5046198, 1073741853, 0, -5046197, 1073741853, 0, -5046196, 1073741853, 0, -5046195, 1073741853, 0, -5046194, 1073741853, 0, -5046193, 1073741853, 0, -5046192, 1073741853, 0, -5046191, 1073741853, 0, -5046190, 1073741853, 0, -5046189, 1073741853, 0, -5046188, 1073741853, 0, -5046187, 1073741853, 0, -5046186, 1073741853, 0, -5046185, 1073741853, 0, -5046184, 1073741853, 0, -5046183, 1073741853, 0, -5046182, 1073741853, 0, -5046181, 1073741853, 0, -5046180, 1073741853, 0, -5046179, 1073741853, 0, -5046178, 1073741853, 0, -5046177, 1073741853, 0, -5046176, 1073741853, 0, -5046175, 1073741853, 0, -5046174, 1073741853, 0, -5046173, 1073741853, 0, -5046172, 1073741853, 0, -5046171, 1073741853, 0, -5046170, 1073741853, 0, -5046169, 1073741853, 0, -5046168, 1073741853, 0, -5046167, 1073741853, 0, -4915209, 1073741853, 0, -4915208, 1073741853, 0, -4915207, 1073741853, 0, -4915206, 1073741854, 0, -4980695, 6, 0, -4980694, 7, 0, -4980693, 7, 0, -4980692, 7, 0, -4980691, 7, 0, -4980690, 7, 0, -4980689, 7, 0, -4980688, 7, 0, -4980687, 7, 0, -4980686, 7, 0, -4980685, 7, 0, -4980684, 7, 0, -4980683, 7, 0, -4980682, 7, 0, -4980681, 7, 0, -4980680, 7, 0, -4980679, 7, 0, -4980665, 1073741853, 0, -4980664, 1073741853, 0, -4980663, 1073741853, 0, -4980662, 1073741853, 0, -4980661, 1073741853, 0, -4980660, 1073741853, 0, -4980659, 1073741853, 0, -4980658, 1073741853, 0, -4980657, 1073741853, 0, -4980656, 1073741853, 0, -4980655, 1073741853, 0, -4980654, 1073741853, 0, -4980653, 1073741853, 0, -4980652, 1073741853, 0, -4980651, 1073741853, 0, -4980650, 1073741853, 0, -4980649, 1073741853, 0, -4980648, 1073741853, 0, -4980647, 1073741853, 0, -4980646, 1073741853, 0, -4980645, 1073741853, 0, -4980644, 1073741853, 0, -4980643, 1073741853, 0, -4980642, 1073741853, 0, -4980641, 1073741853, 0, -4980640, 1073741853, 0, -4980639, 1073741853, 0, -4980638, 1073741853, 0, -4980637, 1073741853, 0, -4980636, 1073741853, 0, -4980635, 1073741853, 0, -4980634, 1073741853, 0, -4980633, 1073741853, 0, -4980632, 1073741853, 0, -4980631, 1073741853, 0, -4849673, 1073741853, 0, -4849672, 1073741853, 0, -4849671, 1073741853, 0, -4849670, 1073741854, 0, -4915199, 3, 0, -4915198, 4, 0, -4915197, 5, 0, -4915159, 9, 0, -4915158, 11, 0, -4915157, 11, 0, -4915156, 11, 0, -4915155, 11, 0, -4915154, 11, 0, -4915153, 11, 0, -4915152, 11, 0, -4915151, 11, 0, -4915150, 11, 0, -4915149, 11, 0, -4915148, 11, 0, -4915147, 11, 0, -4915146, 7, 0, -4915145, 7, 0, -4915144, 7, 0, -4915143, 7, 0, -4915129, 1073741853, 0, -4915128, 1073741853, 0, -4915127, 1073741853, 0, -4915126, 1073741853, 0, -4915125, 1073741853, 0, -4915124, 1073741853, 0, -4915123, 1073741853, 0, -4915122, 1073741853, 0, -4915121, 1073741853, 0, -4915120, 1073741853, 0, -4915119, 1073741853, 0, -4915118, 1073741853, 0, -4915117, 1073741853, 0, -4915116, 1073741853, 0, -4915115, 1073741853, 0, -4915114, 1073741853, 0, -4915113, 1073741853, 0, -4915112, 1073741853, 0, -4915111, 1073741853, 0, -4915110, 1073741853, 0, -4915109, 1073741853, 0, -4915108, 1073741853, 0, -4915107, 1073741853, 0, -4915106, 1073741853, 0, -4915105, 1073741853, 0, -4915104, 1073741853, 0, -4915103, 1073741853, 0, -4915102, 1073741853, 0, -4915101, 1073741853, 0, -4915100, 1073741853, 0, -4915099, 1073741853, 0, -4915098, 1073741853, 0, -4915097, 1073741853, 0, -4915096, 1073741853, 0, -4915095, 1073741853, 0, -4784137, 1073741853, 0, -4784136, 1073741853, 0, -4784135, 1073741853, 0, -4784134, 1073741854, 0, -4849663, 9, 0, -4849662, 11, 0, -4849661, 12, 0, -4849628, 536870917, 0, -4849627, 536870916, 0, -4849626, 536870916, 0, -4849625, 536870916, 0, -4849624, 536870913, 0, -4849593, 1073741853, 0, -4849592, 1073741853, 0, -4849591, 1073741853, 0, -4849590, 1073741853, 0, -4849589, 1073741853, 0, -4849588, 1073741853, 0, -4849587, 1073741853, 0, -4849586, 1073741853, 0, -4849585, 1073741853, 0, -4849584, 1073741853, 0, -4849583, 1073741853, 0, -4849582, 1073741853, 0, -4849581, 1073741853, 0, -4849580, 1073741853, 0, -4849579, 1073741853, 0, -4849578, 1073741853, 0, -4849577, 1073741853, 0, -4849576, 1073741853, 0, -4849575, 1073741853, 0, -4849574, 1073741853, 0, -4849573, 1073741853, 0, -4849572, 1073741853, 0, -4849571, 1073741853, 0, -4849570, 1073741853, 0, -4849569, 1073741853, 0, -4849568, 1073741853, 0, -4849567, 1073741853, 0, -4849566, 1073741853, 0, -4849565, 1073741853, 0, -4849564, 1073741853, 0, -4849563, 1073741853, 0, -4849562, 1073741853, 0, -4849561, 1073741853, 0, -4849560, 1073741853, 0, -4849559, 1073741853, 0, -4718601, 1073741853, 0, -4718600, 1073741853, 0, -4718599, 1073741853, 0, -4718598, 1073741854, 0, -4784092, 536870924, 0, -4784091, 536870923, 0, -4784090, 536870923, 0, -4784089, 536870923, 0, -4784088, 536870921, 0, -4784057, 1073741853, 0, -4784056, 1073741853, 0, -4784055, 1073741853, 0, -4784054, 1073741853, 0, -4784053, 1073741853, 0, -4784052, 1073741853, 0, -4784051, 1073741853, 0, -4784050, 1073741853, 0, -4784049, 1073741853, 0, -4784048, 1073741853, 0, -4784047, 1073741853, 0, -4784046, 1073741853, 0, -4784045, 1073741853, 0, -4784044, 1073741853, 0, -4784043, 1073741853, 0, -4784042, 1073741853, 0, -4784041, 1073741853, 0, -4784040, 1073741853, 0, -4784039, 1073741853, 0, -4784038, 1073741853, 0, -4784037, 1073741853, 0, -4784036, 1073741853, 0, -4784035, 1073741853, 0, -4784034, 1073741853, 0, -4784033, 1073741853, 0, -4784032, 1073741853, 0, -4784031, 1073741853, 0, -4784030, 1073741853, 0, -4784029, 1073741853, 0, -4784028, 1073741853, 0, -4784027, 1073741853, 0, -4784026, 1073741853, 0, -4784025, 1073741853, 0, -4784024, 1073741853, 0, -4784023, 1073741853, 0, -4653065, 1073741853, 0, -4653064, 1073741853, 0, -4653063, 1073741853, 0, -4653062, 1073741854, 0, -4718547, 17, 0, -4718546, 18, 0, -4718545, 18, 0, -4718544, 18, 0, -4718543, 19, 0, -4718521, 1073741853, 0, -4718520, 1073741853, 0, -4718519, 1073741853, 0, -4718518, 1073741853, 0, -4718517, 1073741853, 0, -4718516, 1073741853, 0, -4718515, 1073741853, 0, -4718514, 1073741853, 0, -4718513, 1073741853, 0, -4718512, 1073741853, 0, -4718511, 1073741853, 0, -4718510, 1073741853, 0, -4718509, 1073741853, 0, -4718508, 1073741853, 0, -4718507, 1073741853, 0, -4718506, 1073741853, 0, -4718505, 1073741853, 0, -4718504, 1073741853, 0, -4718503, 1073741853, 0, -4718502, 1073741853, 0, -4718501, 1073741853, 0, -4718500, 1073741853, 0, -4718499, 1073741853, 0, -4718498, 1073741853, 0, -4718497, 1073741853, 0, -4718496, 1073741853, 0, -4718495, 1073741853, 0, -4718494, 1073741853, 0, -4718493, 1073741853, 0, -4718492, 1073741853, 0, -4718491, 1073741853, 0, -4718490, 1073741853, 0, -4718489, 1073741853, 0, -4718488, 1073741853, 0, -4718487, 1073741853, 0, -4587529, 1073741853, 0, -4587528, 1073741853, 0, -4587527, 1073741853, 0, -4587526, 1073741854, 0, -4653011, 9, 0, -4653010, 11, 0, -4653009, 11, 0, -4653008, 11, 0, -4653007, 12, 0, -4652985, 1073741853, 0, -4652984, 1073741853, 0, -4652983, 1073741853, 0, -4652982, 1073741853, 0, -4652981, 1073741853, 0, -4652980, 1073741853, 0, -4652979, 1073741853, 0, -4652978, 1073741853, 0, -4652977, 1073741853, 0, -4652976, 1073741853, 0, -4652975, 1073741853, 0, -4652974, 1073741853, 0, -4652973, 1073741853, 0, -4652972, 1073741853, 0, -4652971, 1073741853, 0, -4652970, 1073741853, 0, -4652969, 1073741853, 0, -4652968, 1073741853, 0, -4652967, 1073741853, 0, -4652966, 1073741853, 0, -4652965, 1073741853, 0, -4652964, 1073741853, 0, -4652963, 1073741853, 0, -4652962, 1073741853, 0, -4652961, 1073741853, 0, -4652960, 1073741853, 0, -4652959, 1073741853, 0, -4652958, 1073741853, 0, -4652957, 1073741853, 0, -4652956, 1073741853, 0, -4652955, 1073741853, 0, -4652954, 1073741853, 0, -4652953, 1073741853, 0, -4652952, 1073741853, 0, -4652951, 1073741853, 0, -4521993, 1073741853, 0, -4521992, 1073741853, 0, -4521991, 1073741853, 0, -4521990, 1073741853, 0, -4587484, 536870917, 0, -4587483, 536870916, 0, -4587482, 536870916, 0, -4587481, 536870916, 0, -4587480, 536870916, 0, -4587479, 536870915, 0, -4587449, 1073741853, 0, -4587448, 1073741853, 0, -4587447, 1073741853, 0, -4587446, 1073741853, 0, -4587445, 1073741853, 0, -4587444, 1073741853, 0, -4587443, 1073741853, 0, -4587442, 1073741853, 0, -4587441, 1073741853, 0, -4587440, 1073741853, 0, -4587439, 1073741853, 0, -4587438, 1073741853, 0, -4587437, 1073741853, 0, -4587436, 1073741853, 0, -4587435, 1073741853, 0, -4587434, 1073741853, 0, -4587433, 1073741853, 0, -4587432, 1073741853, 0, -4587431, 1073741853, 0, -4587430, 1073741853, 0, -4587429, 1073741853, 0, -4587428, 1073741853, 0, -4587427, 1073741853, 0, -4587426, 1073741853, 0, -4587425, 1073741853, 0, -4587424, 1073741853, 0, -4587423, 1073741853, 0, -4587422, 1073741853, 0, -4587421, 1073741853, 0, -4587420, 1073741853, 0, -4587419, 1073741853, 0, -4587418, 1073741853, 0, -4587417, 1073741853, 0, -4587416, 1073741853, 0, -4587415, 1073741853, 0, -4456457, 1073741853, 0, -4456456, 1073741853, 0, -4456455, 1073741853, 0, -4456454, 1073741854, 0, -4521948, 536870924, 0, -4521947, 536870922, 0, -4521946, 536870922, 0, -4521945, 536870922, 0, -4521944, 536870922, 0, -4521943, 536870921, 0, -4521913, 1073741853, 0, -4521912, 1073741853, 0, -4521911, 1073741853, 0, -4521910, 1073741853, 0, -4521909, 1073741853, 0, -4521908, 1073741853, 0, -4521907, 1073741853, 0, -4521906, 1073741853, 0, -4521905, 1073741853, 0, -4521904, 1073741853, 0, -4521903, 1073741853, 0, -4521902, 1073741853, 0, -4521901, 1073741853, 0, -4521900, 1073741853, 0, -4521899, 1073741853, 0, -4521898, 1073741853, 0, -4521897, 1073741853, 0, -4521896, 1073741853, 0, -4521895, 1073741853, 0, -4521894, 1073741853, 0, -4521893, 1073741853, 0, -4521892, 1073741853, 0, -4521891, 1073741853, 0, -4521890, 1073741853, 0, -4521889, 1073741853, 0, -4521888, 1073741853, 0, -4521887, 1073741853, 0, -4521886, 1073741853, 0, -4521885, 1073741853, 0, -4521884, 1073741853, 0, -4521883, 1073741853, 0, -4521882, 1073741853, 0, -4521881, 1073741853, 0, -4521880, 1073741853, 0, -4521879, 1073741853, 0, -4390921, 1073741853, 0, -4390920, 1073741853, 0, -4390919, 1073741853, 0, -4390918, 1073741854, 0, -4390917, 3, 0, -4390916, 4, 0, -4390915, 4, 0, -4390914, 4, 0, -4390913, 4, 0, -4456448, 4, 0, -4456447, 4, 0, -4456446, 4, 0, -4456445, 4, 0, -4456444, 4, 0, -4456443, 4, 0, -4456442, 4, 0, -4456441, 4, 0, -4456440, 4, 0, -4456439, 4, 0, -4456438, 4, 0, -4456437, 4, 0, -4456436, 4, 0, -4456435, 5, 0, -4456432, 17, 0, -4456431, 18, 0, -4456430, 18, 0, -4456429, 18, 0, -4456428, 18, 0, -4456427, 18, 0, -4456426, 18, 0, -4456425, 18, 0, -4456424, 18, 0, -4456423, 18, 0, -4456422, 18, 0, -4456421, 19, 0, -4456377, 1073741853, 0, -4456376, 1073741853, 0, -4456375, 1073741853, 0, -4456374, 1073741853, 0, -4456373, 1073741853, 0, -4456372, 1073741853, 0, -4456371, 1073741853, 0, -4456370, 1073741853, 0, -4456369, 1073741853, 0, -4456368, 1073741853, 0, -4456367, 1073741853, 0, -4456366, 1073741853, 0, -4456365, 1073741853, 0, -4456364, 1073741853, 0, -4456363, 1073741853, 0, -4456362, 1073741853, 0, -4456361, 1073741853, 0, -4456360, 1073741853, 0, -4456359, 1073741853, 0, -4456358, 1073741853, 0, -4456357, 1073741853, 0, -4456356, 1073741853, 0, -4456355, 1073741853, 0, -4456354, 1073741853, 0, -4456353, 1073741853, 0, -4456352, 1073741853, 0, -4456351, 1073741853, 0, -4456350, 1073741853, 0, -4456349, 1073741853, 0, -4456348, 1073741853, 0, -4456347, 1073741853, 0, -4456346, 1073741853, 0, -4456345, 1073741853, 0, -4456344, 1073741853, 0, -4456343, 1073741853, 0, -4325385, 1073741853, 0, -4325384, 1073741853, 0, -4325383, 1073741853, 0, -4325382, 1073741854, 0, -4325381, 6, 0, -4325380, 7, 0, -4325379, 7, 0, -4325378, 7, 0, -4325377, 7, 0, -4390912, 7, 0, -4390911, 7, 0, -4390910, 7, 0, -4390909, 7, 0, -4390908, 7, 0, -4390907, 7, 0, -4390906, 7, 0, -4390905, 7, 0, -4390904, 7, 0, -4390903, 7, 0, -4390902, 7, 0, -4390901, 7, 0, -4390900, 7, 0, -4390899, 8, 0, -4390896, 6, 0, -4390895, 7, 0, -4390894, 7, 0, -4390893, 7, 0, -4390892, 7, 0, -4390891, 7, 0, -4390890, 7, 0, -4390889, 7, 0, -4390888, 7, 0, -4390887, 7, 0, -4390886, 7, 0, -4390885, 8, 0, -4390880, 1, 0, -4390879, 4, 0, -4390878, 4, 0, -4390877, 5, 0, -4390841, 1073741853, 0, -4390840, 1073741853, 0, -4390839, 1073741853, 0, -4390838, 1073741853, 0, -4390837, 1073741853, 0, -4390836, 1073741853, 0, -4390835, 1073741853, 0, -4390834, 1073741853, 0, -4390833, 1073741853, 0, -4390832, 1073741853, 0, -4390831, 1073741853, 0, -4390830, 1073741853, 0, -4390829, 1073741853, 0, -4390828, 1073741853, 0, -4390827, 1073741853, 0, -4390826, 1073741853, 0, -4390825, 1073741853, 0, -4390824, 1073741853, 0, -4390823, 1073741853, 0, -4390822, 1073741853, 0, -4390821, 1073741853, 0, -4390820, 1073741853, 0, -4390819, 1073741853, 0, -4390818, 1073741853, 0, -4390817, 1073741853, 0, -4390816, 1073741853, 0, -4390815, 1073741853, 0, -4390814, 1073741853, 0, -4390813, 1073741853, 0, -4390812, 1073741853, 0, -4390811, 1073741853, 0, -4390810, 1073741853, 0, -4390809, 1073741853, 0, -4390808, 1073741853, 0, -4390807, 1073741853, 0, -4259849, 1073741853, 0, -4259848, 1073741853, 0, -4259847, 1073741853, 0, -4259846, 1073741854, 0, -4259845, 6, 0, -4259844, 7, 0, -4259843, 7, 0, -4259842, 7, 0, -4259841, 7, 0, -4325376, 7, 0, -4325375, 7, 0, -4325374, 7, 0, -4325373, 7, 0, -4325372, 1073741831, 0, -4325371, 1073741831, 0, -4325370, 1073741831, 0, -4325369, 1073741831, 0, -4325368, 1073741831, 0, -4325367, 1073741831, 0, -4325366, 7, 0, -4325365, 7, 0, -4325364, 7, 0, -4325363, 8, 0, -4325360, 9, 0, -4325359, 11, 0, -4325358, 11, 0, -4325357, 11, 0, -4325356, 11, 0, -4325355, 11, 0, -4325354, 11, 0, -4325353, 11, 0, -4325352, 11, 0, -4325351, 11, 0, -4325350, 11, 0, -4325349, 12, 0, -4325344, 6, 0, -4325343, 7, 0, -4325342, 7, 0, -4325341, 8, 0, -4325305, 1073741853, 0, -4325304, 1073741853, 0, -4325303, 1073741853, 0, -4325302, 1073741853, 0, -4325301, 1073741853, 0, -4325300, 1073741853, 0, -4325299, 1073741853, 0, -4325298, 1073741853, 0, -4325297, 1073741853, 0, -4325296, 1073741853, 0, -4325295, 1073741853, 0, -4325294, 1073741853, 0, -4325293, 1073741853, 0, -4325292, 1073741853, 0, -4325291, 1073741853, 0, -4325290, 1073741853, 0, -4325289, 1073741853, 0, -4325288, 1073741853, 0, -4325287, 1073741853, 0, -4325286, 1073741853, 0, -4325285, 1073741853, 0, -4325284, 1073741853, 0, -4325283, 1073741853, 0, -4325282, 1073741853, 0, -4325281, 1073741853, 0, -4325280, 1073741853, 0, -4325279, 1073741853, 0, -4325278, 1073741853, 0, -4325277, 1073741853, 0, -4325276, 1073741853, 0, -4325275, 1073741853, 0, -4325274, 1073741853, 0, -4325273, 1073741853, 0, -4325272, 1073741853, 0, -4325271, 1073741853, 0, -4194313, 1073741853, 0, -4194312, 1073741853, 0, -4194311, 1073741853, 0, -4194310, 1073741854, 0, -4194309, 6, 0, -4194308, 7, 0, -4194307, 7, 0, -4194306, 7, 0, -4194305, 7, 0, -4259840, 7, 0, -4259839, 7, 0, -4259838, 1073741831, 0, -4259837, 1073741831, 0, -4259836, 1073741831, 0, -4259835, 1073741831, 0, -4259834, 1073741831, 0, -4259833, 1073741831, 0, -4259832, 1073741831, 0, -4259831, 1073741831, 0, -4259830, 7, 0, -4259829, 7, 0, -4259828, 7, 0, -4259827, 8, 0, -4259808, 9, 0, -4259807, 10, 0, -4259806, 10, 0, -4259805, 12, 0, -4259769, 1073741853, 0, -4259768, 1073741853, 0, -4259767, 1073741853, 0, -4259766, 1073741853, 0, -4259765, 1073741853, 0, -4259764, 1073741853, 0, -4259763, 1073741853, 0, -4259762, 1073741853, 0, -4259761, 1073741853, 0, -4259760, 1073741853, 0, -4259759, 1073741853, 0, -4259758, 1073741853, 0, -4259757, 1073741853, 0, -4259756, 1073741853, 0, -4259755, 1073741853, 0, -4259754, 1073741853, 0, -4259753, 1073741853, 0, -4259752, 1073741853, 0, -4259751, 1073741853, 0, -4259750, 1073741853, 0, -4259749, 1073741853, 0, -4259748, 1073741853, 0, -4259747, 1073741853, 0, -4259746, 1073741853, 0, -4259745, 1073741853, 0, -4259744, 1073741853, 0, -4259743, 1073741853, 0, -4259742, 1073741853, 0, -4259741, 1073741853, 0, -4259740, 1073741853, 0, -4259739, 1073741853, 0, -4259738, 1073741853, 0, -4259737, 1073741853, 0, -4259736, 1073741853, 0, -4259735, 1073741853, 0, -4128777, 1073741853, 0, -4128776, 1073741853, 0, -4128775, 1073741853, 0, -4128774, 1073741854, 0, -4128773, 9, 0, -4128772, 7, 0, -4128771, 7, 0, -4128770, 7, 0, -4128769, 7, 0, -4194304, 7, 0, -4194303, 7, 0, -4194302, 1073741831, 0, -4194301, 1073741831, 0, -4194300, 1073741831, 0, -4194299, 1073741831, 0, -4194298, 1073741831, 0, -4194297, 1073741831, 0, -4194296, 1073741831, 0, -4194295, 7, 0, -4194294, 7, 0, -4194293, 7, 0, -4194292, 7, 0, -4194291, 8, 0, -4194266, 17, 0, -4194265, 18, 0, -4194264, 18, 0, -4194263, 18, 0, -4194262, 18, 0, -4194261, 18, 0, -4194260, 18, 0, -4194259, 19, 0, -4194233, 1073741853, 0, -4194232, 1073741853, 0, -4194231, 1073741853, 0, -4194230, 1073741853, 0, -4194229, 1073741853, 0, -4194228, 1073741853, 0, -4194227, 1073741853, 0, -4194226, 1073741853, 0, -4194225, 1073741853, 0, -4194224, 1073741853, 0, -4194223, 1073741853, 0, -4194222, 1073741853, 0, -4194221, 1073741853, 0, -4194220, 1073741853, 0, -4194219, 1073741853, 0, -4194218, 1073741853, 0, -4194217, 1073741853, 0, -4194216, 1073741853, 0, -4194215, 1073741853, 0, -4194214, 1073741853, 0, -4194213, 1073741853, 0, -4194212, 1073741853, 0, -4194211, 1073741853, 0, -4194210, 1073741853, 0, -4194209, 1073741853, 0, -4194208, 1073741853, 0, -4194207, 1073741853, 0, -4194206, 1073741853, 0, -4194205, 1073741853, 0, -4194204, 1073741853, 0, -4194203, 1073741853, 0, -4194202, 1073741853, 0, -4194201, 1073741853, 0, -4194200, 1073741853, 0, -4194199, 1073741853, 0, -4063241, 1073741853, 0, -4063240, 1073741853, 0, -4063239, 1073741853, 0, -4063238, 1073741854, 0, -4063237, 3, 0, -4063236, 4, 0, -4063235, 4, 0, -4063234, 4, 0, -4063233, 4, 0, -4128768, 4, 0, -4128767, 4, 0, -4128766, 4, 0, -4128765, 4, 0, -4128764, 4, 0, -4128763, 4, 0, -4128762, 4, 0, -4128761, 4, 0, -4128760, 4, 0, -4128759, 4, 0, -4128758, 4, 0, -4128757, 4, 0, -4128756, 4, 0, -4128755, 5, 0, -4128730, 9, 0, -4128729, 10, 0, -4128728, 10, 0, -4128727, 10, 0, -4128726, 10, 0, -4128725, 10, 0, -4128724, 10, 0, -4128723, 12, 0, -4128697, 1073741853, 0, -4128696, 1073741853, 0, -4128695, 1073741853, 0, -4128694, 1073741853, 0, -4128693, 1073741853, 0, -4128692, 1073741853, 0, -4128691, 1073741853, 0, -4128690, 1073741853, 0, -4128689, 1073741853, 0, -4128688, 1073741853, 0, -4128687, 1073741853, 0, -4128686, 1073741853, 0, -4128685, 1073741853, 0, -4128684, 1073741853, 0, -4128683, 1073741853, 0, -4128682, 1073741853, 0, -4128681, 1073741853, 0, -4128680, 1073741853, 0, -4128679, 1073741853, 0, -4128678, 1073741853, 0, -4128677, 1073741853, 0, -4128676, 1073741853, 0, -4128675, 1073741853, 0, -4128674, 1073741853, 0, -4128673, 1073741853, 0, -4128672, 1073741853, 0, -4128671, 1073741853, 0, -4128670, 1073741853, 0, -4128669, 1073741853, 0, -4128668, 1073741853, 0, -4128667, 1073741853, 0, -4128666, 1073741853, 0, -4128665, 1073741853, 0, -4128664, 1073741853, 0, -4128663, 1073741853, 0, -3997705, 1073741853, 0, -3997704, 1073741853, 0, -3997703, 1073741853, 0, -3997702, 1073741854, 0, -3997701, 6, 0, -3997700, 7, 0, -3997699, 7, 0, -3997698, 7, 0, -3997697, 7, 0, -4063232, 7, 0, -4063231, 7, 0, -4063230, 7, 0, -4063229, 7, 0, -4063228, 7, 0, -4063227, 7, 0, -4063226, 7, 0, -4063225, 7, 0, -4063224, 7, 0, -4063223, 7, 0, -4063222, 7, 0, -4063221, 7, 0, -4063220, 7, 0, -4063219, 8, 0, -4063161, 1073741853, 0, -4063160, 1073741853, 0, -4063159, 1073741853, 0, -4063158, 1073741853, 0, -4063157, 1073741853, 0, -4063156, 1073741853, 0, -4063155, 1073741853, 0, -4063154, 1073741853, 0, -4063153, 1073741853, 0, -4063152, 1073741853, 0, -4063151, 1073741853, 0, -4063150, 1073741853, 0, -4063149, 1073741853, 0, -4063148, 1073741853, 0, -4063147, 1073741853, 0, -4063146, 1073741853, 0, -4063145, 1073741853, 0, -4063144, 1073741853, 0, -4063143, 1073741853, 0, -4063142, 1073741853, 0, -4063141, 1073741853, 0, -4063140, 1073741853, 0, -4063139, 1073741853, 0, -4063138, 1073741853, 0, -4063137, 1073741853, 0, -4063136, 1073741853, 0, -4063135, 1073741853, 0, -4063134, 1073741853, 0, -4063133, 1073741853, 0, -4063132, 1073741853, 0, -4063131, 1073741853, 0, -4063130, 1073741853, 0, -4063129, 1073741853, 0, -4063128, 1073741853, 0, -4063127, 1073741853, 0, -3932169, 1073741853, 0, -3932168, 1073741853, 0, -3932167, 1073741853, 0, -3932166, 1073741854, 0, -3932165, 6, 0, -3932164, 7, 0, -3932163, 7, 0, -3932162, 7, 0, -3932161, 7, 0, -3997696, 7, 0, -3997695, 7, 0, -3997694, 7, 0, -3997693, 7, 0, -3997692, 7, 0, -3997691, 7, 0, -3997690, 7, 0, -3997689, 7, 0, -3997688, 7, 0, -3997687, 7, 0, -3997686, 7, 0, -3997685, 7, 0, -3997684, 7, 0, -3997683, 8, 0, -3997625, 1073741853, 0, -3997624, 1073741853, 0, -3997623, 1073741853, 0, -3997622, 1073741853, 0, -3997621, 1073741853, 0, -3997620, 1073741853, 0, -3997619, 1073741853, 0, -3997618, 1073741853, 0, -3997617, 1073741853, 0, -3997616, 1073741853, 0, -3997615, 1073741853, 0, -3997614, 1073741853, 0, -3997613, 1073741853, 0, -3997612, 1073741853, 0, -3997611, 1073741853, 0, -3997610, 1073741853, 0, -3997609, 1073741853, 0, -3997608, 1073741853, 0, -3997607, 1073741853, 0, -3997606, 1073741853, 0, -3997605, 1073741853, 0, -3997604, 1073741853, 0, -3997603, 1073741853, 0, -3997602, 1073741853, 0, -3997601, 1073741853, 0, -3997600, 1073741853, 0, -3997599, 1073741853, 0, -3997598, 1073741853, 0, -3997597, 1073741853, 0, -3997596, 1073741853, 0, -3997595, 1073741853, 0, -3997594, 1073741853, 0, -3997593, 1073741853, 0, -3997592, 1073741853, 0, -3997591, 1073741853, 0, -3866633, 1073741853, 0, -3866632, 1073741853, 0, -3866631, 1073741853, 0, -3866630, 1073741854, 0, -3866629, 6, 0, -3866628, 7, 0, -3866627, 7, 0, -3866626, 7, 0, -3866625, 7, 0, -3932160, 7, 0, -3932159, 7, 0, -3932158, 7, 0, -3932157, 7, 0, -3932156, 7, 0, -3932155, 7, 0, -3932154, 7, 0, -3932153, 7, 0, -3932152, 7, 0, -3932151, 7, 0, -3932150, 7, 0, -3932149, 7, 0, -3932148, 7, 0, -3932147, 8, 0, -3932109, 3, 0, -3932108, 4, 0, -3932107, 5, 0, -3932089, 1073741853, 0, -3932088, 1073741853, 0, -3932087, 1073741853, 0, -3932086, 1073741853, 0, -3932085, 1073741853, 0, -3932084, 1073741853, 0, -3932083, 1073741853, 0, -3932082, 1073741853, 0, -3932081, 1073741853, 0, -3932080, 1073741853, 0, -3932079, 1073741853, 0, -3932078, 1073741853, 0, -3932077, 1073741853, 0, -3932076, 1073741853, 0, -3932075, 1073741853, 0, -3932074, 1073741853, 0, -3932073, 1073741853, 0, -3932072, 1073741853, 0, -3932071, 1073741853, 0, -3932070, 1073741853, 0, -3932069, 1073741853, 0, -3932068, 1073741853, 0, -3932067, 1073741853, 0, -3932066, 1073741853, 0, -3932065, 1073741853, 0, -3932064, 1073741853, 0, -3932063, 1073741853, 0, -3932062, 1073741853, 0, -3932061, 1073741853, 0, -3932060, 1073741853, 0, -3932059, 1073741853, 0, -3932058, 1073741853, 0, -3932057, 1073741853, 0, -3932056, 1073741853, 0, -3932055, 1073741853, 0, -3801097, 1073741853, 0, -3801096, 1073741853, 0, -3801095, 1073741853, 0, -3801094, 1073741854, 0, -3801093, 1073741854, 0, -3801092, 7, 0, -3801091, 7, 0, -3801090, 7, 0, -3801089, 7, 0, -3866624, 7, 0, -3866623, 7, 0, -3866622, 7, 0, -3866621, 7, 0, -3866620, 7, 0, -3866619, 7, 0, -3866618, 7, 0, -3866617, 7, 0, -3866616, 7, 0, -3866615, 7, 0, -3866614, 7, 0, -3866613, 7, 0, -3866612, 7, 0, -3866611, 8, 0, -3866573, 6, 0, -3866572, 7, 0, -3866571, 8, 0, -3866553, 1073741853, 0, -3866552, 1073741853, 0, -3866551, 1073741853, 0, -3866550, 1073741853, 0, -3866549, 1073741853, 0, -3866548, 1073741853, 0, -3866547, 1073741853, 0, -3866546, 1073741853, 0, -3866545, 1073741853, 0, -3866544, 1073741853, 0, -3866543, 1073741853, 0, -3866542, 1073741853, 0, -3866541, 1073741853, 0, -3866540, 1073741853, 0, -3866539, 1073741853, 0, -3866538, 1073741853, 0, -3866537, 1073741853, 0, -3866536, 1073741853, 0, -3866535, 1073741853, 0, -3866534, 1073741853, 0, -3866533, 1073741853, 0, -3866532, 1073741853, 0, -3866531, 1073741853, 0, -3866530, 1073741853, 0, -3866529, 1073741853, 0, -3866528, 1073741853, 0, -3866527, 1073741853, 0, -3866526, 1073741853, 0, -3866525, 1073741853, 0, -3866524, 1073741853, 0, -3866523, 1073741853, 0, -3866522, 1073741853, 0, -3866521, 1073741853, 0, -3866520, 1073741853, 0, -3866519, 1073741853, 0, -3735561, 1073741853, 0, -3735560, 1073741853, 0, -3735559, 1073741853, 0, -3735558, 1073741854, 0, -3735557, 1073741854, 0, -3735556, 7, 0, -3735555, 7, 0, -3735554, 7, 0, -3735553, 7, 0, -3801088, 7, 0, -3801087, 7, 0, -3801086, 7, 0, -3801085, 7, 0, -3801084, 7, 0, -3801083, 7, 0, -3801082, 7, 0, -3801081, 7, 0, -3801080, 7, 0, -3801079, 7, 0, -3801078, 7, 0, -3801077, 7, 0, -3801076, 7, 0, -3801075, 8, 0, -3801037, 9, 0, -3801036, 11, 0, -3801035, 12, 0, -3801017, 1073741853, 0, -3801016, 1073741853, 0, -3801015, 1073741853, 0, -3801014, 1073741853, 0, -3801013, 1073741853, 0, -3801012, 1073741853, 0, -3801011, 1073741853, 0, -3801010, 1073741853, 0, -3801009, 1073741853, 0, -3801008, 1073741853, 0, -3801007, 1073741853, 0, -3801006, 1073741853, 0, -3801005, 1073741853, 0, -3801004, 1073741853, 0, -3801003, 1073741853, 0, -3801002, 1073741853, 0, -3801001, 1073741853, 0, -3801000, 1073741853, 0, -3800999, 1073741853, 0, -3800998, 1073741853, 0, -3800997, 1073741853, 0, -3800996, 1073741853, 0, -3800995, 1073741853, 0, -3800994, 1073741853, 0, -3800993, 1073741853, 0, -3800992, 1073741853, 0, -3800991, 1073741853, 0, -3800990, 1073741853, 0, -3800989, 1073741853, 0, -3800988, 1073741853, 0, -3800987, 1073741853, 0, -3800986, 1073741853, 0, -3800985, 1073741853, 0, -3800984, 1073741853, 0, -3800983, 1073741853, 0, -3670025, 1073741853, 0, -3670024, 1073741853, 0, -3670023, 1073741853, 0, -3670022, 1073741854, 0, -3670021, 6, 0, -3670020, 7, 0, -3670019, 7, 0, -3670018, 7, 0, -3670017, 7, 0, -3735552, 7, 0, -3735551, 7, 0, -3735550, 7, 0, -3735549, 7, 0, -3735548, 7, 0, -3735547, 7, 0, -3735546, 7, 0, -3735545, 7, 0, -3735544, 7, 0, -3735543, 7, 0, -3735542, 7, 0, -3735541, 7, 0, -3735540, 7, 0, -3735539, 8, 0, -3735503, 31, 0, -3735502, 33, 0, -3735481, 1073741853, 0, -3735480, 1073741853, 0, -3735479, 1073741853, 0, -3735478, 1073741853, 0, -3735477, 1073741853, 0, -3735476, 1073741853, 0, -3735475, 1073741853, 0, -3735474, 1073741853, 0, -3735473, 1073741853, 0, -3735472, 1073741853, 0, -3735471, 1073741853, 0, -3735470, 1073741853, 0, -3735469, 1073741853, 0, -3735468, 1073741853, 0, -3735467, 1073741853, 0, -3735466, 1073741853, 0, -3735465, 1073741853, 0, -3735464, 1073741853, 0, -3735463, 1073741853, 0, -3735462, 1073741853, 0, -3735461, 1073741853, 0, -3735460, 1073741853, 0, -3735459, 1073741853, 0, -3735458, 1073741853, 0, -3735457, 1073741853, 0, -3735456, 1073741853, 0, -3735455, 1073741853, 0, -3735454, 1073741853, 0, -3735453, 1073741853, 0, -3735452, 1073741853, 0, -3735451, 1073741853, 0, -3735450, 1073741853, 0, -3735449, 1073741853, 0, -3735448, 1073741853, 0, -3735447, 1073741853, 0, -3604489, 1073741853, 0, -3604488, 1073741853, 0, -3604487, 1073741853, 0, -3604486, 1073741854, 0, -3604485, 6, 0, -3604484, 7, 0, -3604483, 7, 0, -3604482, 7, 0, -3604481, 7, 0, -3670016, 7, 0, -3670015, 7, 0, -3670014, 7, 0, -3670013, 7, 0, -3670012, 7, 0, -3670011, 7, 0, -3670010, 7, 0, -3670009, 7, 0, -3670008, 7, 0, -3670007, 7, 0, -3670006, 7, 0, -3670005, 7, 0, -3670004, 7, 0, -3670003, 8, 0, -3669969, 31, 0, -3669968, 32, 0, -3669967, 30, 0, -3669966, 39, 0, -3669945, 1073741853, 0, -3669944, 1073741853, 0, -3669943, 1073741853, 0, -3669942, 1073741853, 0, -3669941, 1073741853, 0, -3669940, 1073741853, 0, -3669939, 1073741853, 0, -3669938, 1073741853, 0, -3669937, 1073741853, 0, -3669936, 1073741853, 0, -3669935, 1073741853, 0, -3669934, 1073741853, 0, -3669933, 1073741853, 0, -3669932, 1073741853, 0, -3669931, 1073741853, 0, -3669930, 1073741853, 0, -3669929, 1073741853, 0, -3669928, 1073741853, 0, -3669927, 1073741853, 0, -3669926, 1073741853, 0, -3669925, 1073741853, 0, -3669924, 1073741853, 0, -3669923, 1073741853, 0, -3669922, 1073741853, 0, -3669921, 1073741853, 0, -3669920, 1073741853, 0, -3669919, 1073741853, 0, -3669918, 1073741853, 0, -3669917, 1073741853, 0, -3669916, 1073741853, 0, -3669915, 1073741853, 0, -3669914, 1073741853, 0, -3669913, 1073741853, 0, -3669912, 1073741853, 0, -3669911, 1073741853, 0, -3538953, 1073741853, 0, -3538952, 1073741853, 0, -3538951, 1073741853, 0, -3538950, 1073741854, 0, -3538949, 6, 0, -3538948, 7, 0, -3538947, 7, 0, -3538946, 11, 0, -3538945, 11, 0, -3604480, 11, 0, -3604479, 11, 0, -3604478, 11, 0, -3604477, 11, 0, -3604476, 11, 0, -3604475, 11, 0, -3604474, 11, 0, -3604473, 11, 0, -3604472, 11, 0, -3604471, 11, 0, -3604470, 11, 0, -3604469, 11, 0, -3604468, 11, 0, -3604467, 12, 0, -3604437, -1073741782, 0, -3604436, 536870951, 0, -3604435, 31, 0, -3604434, 33, 0, -3604433, 40, 0, -3604432, 41, 0, -3604431, 41, 0, -3604430, 42, 0, -3604409, 1073741853, 0, -3604408, 1073741853, 0, -3604407, 1073741853, 0, -3604406, 1073741853, 0, -3604405, 1073741853, 0, -3604404, 1073741853, 0, -3604403, 1073741853, 0, -3604402, 1073741853, 0, -3604401, 1073741853, 0, -3604400, 1073741853, 0, -3604399, 1073741853, 0, -3604398, 1073741853, 0, -3604397, 1073741853, 0, -3604396, 1073741853, 0, -3604395, 1073741853, 0, -3604394, 1073741853, 0, -3604393, 1073741853, 0, -3604392, 1073741853, 0, -3604391, 1073741853, 0, -3604390, 1073741853, 0, -3604389, 1073741853, 0, -3604388, 1073741853, 0, -3604387, 1073741853, 0, -3604386, 1073741853, 0, -3604385, 1073741853, 0, -3604384, 1073741853, 0, -3604383, 1073741853, 0, -3604382, 1073741853, 0, -3604381, 1073741853, 0, -3604380, 1073741853, 0, -3604379, 1073741853, 0, -3604378, 1073741853, 0, -3604377, 1073741853, 0, -3604376, 1073741853, 0, -3604375, 1073741853, 0, -3538926, 1610612778, 0, -3538925, 1610612777, 0, -3538924, 1610612777, 0, -3538923, 1610612777, 0, -3538922, 1610612777, 0, -3538921, 1610612777, 0, -3538920, 1610612777, 0, -3538919, 1610612777, 0, -3538918, 1610612777, 0, -3538917, 1610612777, 0, -3538916, 1610612777, 0, -3538915, 1610612777, 0, -3538914, 1610612777, 0, -3538913, 1610612777, 0, -3538912, 1610612777, 0, -3538911, 1610612777, 0, -3538910, 1610612777, 0, -3538909, 1610612777, 0, -3538908, 1610612777, 0, -3538903, 536870917, 0, -3538902, 536870915, 0, -3538901, -1073741782, 0, -3538900, 536870951, 0, -3538899, 40, 0, -3538898, 42, 0, -3538873, 1073741853, 0, -3538872, 1073741853, 0, -3538871, 1073741853, 0, -3538870, 1073741853, 0, -3538869, 1073741853, 0, -3538868, 1073741853, 0, -3538867, 1073741853, 0, -3538866, 1073741853, 0, -3538865, 1073741853, 0, -3538864, 1073741853, 0, -3538863, 1073741853, 0, -3538862, 1073741853, 0, -3538861, 1073741853, 0, -3538860, 1073741853, 0, -3538859, 1073741853, 0, -3538858, 1073741853, 0, -3538857, 1073741853, 0, -3538856, 1073741853, 0, -3538855, 1073741853, 0, -3538854, 1073741853, 0, -3538853, 1073741853, 0, -3538852, 1073741853, 0, -3538851, 1073741853, 0, -3538850, 1073741853, 0, -3538849, 1073741853, 0, -3538848, 1073741853, 0, -3538847, 1073741853, 0, -3538846, 1073741853, 0, -3538845, 1073741853, 0, -3538844, 1073741853, 0, -3538843, 1073741853, 0, -3538842, 1073741853, 0, -3538841, 1073741853, 0, -3538840, 1073741853, 0, -3538839, 1073741853, 0, -3473390, 1073741860, 0, -3473389, -1610612698, 0, -3473388, 1610612768, 0, -3473387, 1610612768, 0, -3473386, 1610612768, 0, -3473385, 1610612768, 0, -3473384, 1610612768, 0, -3473383, 1610612768, 0, -3473382, 1610612768, 0, -3473381, 1610612768, 0, -3473380, 1610612768, 0, -3473379, 1610612768, 0, -3473378, 1610612768, 0, -3473377, 1610612768, 0, -3473376, 1610612768, 0, -3473375, 1610612768, 0, -3473374, 1610612768, 0, -3473373, 1610612768, 0, -3473372, 1610612768, 0, -3473365, -1073741782, 0, -3473364, 536870951, 0, -3473363, 1610612772, 0, -3407854, 1073741860, 0, -3407853, -1610612704, 0, -3407831, 536870917, 0, -3407830, 536870915, 0, -3407829, -1073741782, 0, -3407828, 536870951, 0, -3407827, 1610612772, 0, -3342318, 1073741860, 0, -3342317, -1610612704, 0, -3342293, -1073741782, 0, -3342292, 536870951, 0, -3342291, 1610612772, 0, -3276782, 1073741860, 0, -3276781, -1610612704, 0, -3276761, 536870917, 0, -3276760, 536870916, 0, -3276759, 536870916, 0, -3276758, 536870916, 0, -3276757, -1073741782, 0, -3276756, 536870951, 0, -3276755, 1610612772, 0, -3211246, 1073741860, 0, -3211245, -1610612704, 0, -3211221, -1073741782, 0, -3211220, 536870951, 0, -3211219, 1610612772, 0, -3145710, 1073741860, 0, -3145709, -1610612704, 0, -3145685, -1073741782, 0, -3145684, 536870951, 0, -3145683, 1610612772, 0, -3080174, 1073741860, 0, -3080173, -1610612704, 0, -3080153, 536870917, 0, -3080152, 536870916, 0, -3080151, 536870916, 0, -3080150, 536870915, 0, -3080149, -1073741782, 0, -3080148, 536870951, 0, -3080147, 1610612772, 0, -3014638, 1073741860, 0, -3014637, -1610612704, 0, -3014613, -1073741782, 0, -3014612, 536870951, 0, -3014611, 1610612772, 0, -2949102, 1073741860, 0, -2949101, -1610612704, 0, -2949077, -1073741782, 0, -2949076, 536870951, 0, -2949075, 1610612772, 0, -2883566, 1073741860, 0, -2883565, -1610612704, 0, -2883541, -1073741782, 0, -2883540, 536870951, 0, -2883539, 1610612772, 0, -2818030, 1073741860, 0, -2818029, -1610612704, 0, -2818009, 536870944, 0, -2818008, 536870944, 0, -2818007, 536870944, 0, -2818006, 536870944, 0, -2818005, -1073741782, 0, -2818004, 536870951, 0, -2818003, 1610612772, 0, -2752494, 1073741860, 0, -2752493, -1610612704, 0, -2752486, 536870917, 0, -2752485, 536870915, 0, -2752469, -1073741782, 0, -2752468, 536870951, 0, -2752467, 1610612772, 0, -2686958, 1073741860, 0, -2686957, -1610612704, 0, -2686945, 536870956, 0, -2686943, 536870956, 0, -2686941, 536870956, 0, -2686939, 536870956, 0, -2686937, 536870956, 0, -2686935, 536870956, 0, -2686932, 536870951, 0, -2686931, 1610612772, 0, -2621422, 1073741860, 0, -2621421, -1610612704, 0, -2621414, 536870917, 0, -2621413, 536870915, 0, -2621396, 536870951, 0, -2621395, 1610612772, 0, -2555886, 1073741860, 0, -2555885, -1610612704, 0, -2555860, 536870951, 0, -2555859, 1610612772, 0, -2490350, 1073741860, 0, -2490349, -1610612704, 0, -2490342, 536870917, 0, -2490341, 536870915, 0, -2490324, 536870951, 0, -2490323, 1610612772, 0, -2424814, 1073741860, 0, -2424813, -1610612704, 0, -2424788, 536870951, 0, -2424787, 1610612772, 0, -2359278, 1073741860, 0, -2359277, -1610612704, 0, -2359252, 536870951, 0, -2359251, 1610612772, 0, -2293742, 1073741860, 0, -2293741, -536870880, 0, -2293738, 536870956, 0, -2293736, 536870956, 0, -2293734, 536870956, 0, -2293732, 536870956, 0, -2293730, 536870956, 0, -2293728, 536870956, 0, -2293726, 536870956, 0, -2293724, 536870956, 0, -2293717, 536870946, 0, -2293716, 536870951, 0, -2293715, 1610612772, 0, -2228206, 1073741860, 0, -2228205, -1610612704, 0, -2228180, 536870951, 0, -2228179, 1610612772, 0, -2162670, 1073741860, 0, -2162669, -1610612704, 0, -2162648, 536870913, 0, -2162644, 536870951, 0, -2162643, 38, 0, -2097134, 1073741860, 0, -2097133, -1610612704, 0, -2097108, -1073741782, 0, -2097107, 38, 0, -2031572, -1073741782, 0, -2031571, 38, 0, -1966036, -1073741782, 0, -1966035, 38, 0, -1900526, 1073741860, 0, -1900525, 536870949, 0, -1900504, 536870931, 0, -1900503, 536870930, 0, -1900502, 536870929, 0, -1900500, -1073741782, 0, -1900499, 38, 0, -1834993, 536870945, 0, -1834992, 536870943, 0, -1834990, 1073741860, 0, -1834989, -1610612704, 0, -1834968, 536870924, 0, -1834967, 536870921, 0, -1834966, 536870921, 0, -1834964, -1073741782, 0, -1834963, 38, 0, -1769454, 1073741860, 0, -1769453, -1610612704, 0, -1769428, -1073741782, 0, -1769427, 38, 0, -1703896, 536870931, 0, -1703895, 536870930, 0, -1703894, 536870929, 0, -1703892, -1073741782, 0, -1703891, 38, 0, -1638382, 1073741860, 0, -1638381, -1610612704, 0, -1638360, 536870924, 0, -1638359, 536870923, 0, -1638358, 536870921, 0, -1638356, -1073741782, 0, -1638355, 38, 0, -1572846, 1073741860, 0, -1572845, -1610612704, 0, -1572820, -1073741782, 0, -1572819, 38, 0, -1507310, 1073741860, 0, -1507309, -1610612704, 0, -1507288, 536870931, 0, -1507287, 536870930, 0, -1507286, 536870929, 0, -1507284, -1073741782, 0, -1507283, 38, 0, -1441774, 1073741860, 0, -1441773, -1610612704, 0, -1441752, 536870924, 0, -1441751, 536870922, 0, -1441750, 536870921, 0, -1441748, -1073741782, 0, -1441747, 38, 0, -1376238, 1073741860, 0, -1376237, -1610612704, 0, -1376235, 536870956, 0, -1376233, 536870956, 0, -1376231, 536870956, 0, -1376229, 536870956, 0, -1376227, 536870956, 0, -1376225, 536870956, 0, -1376223, 536870956, 0, -1376221, 536870956, 0, -1376212, -1073741782, 0, -1376211, 38, 0, -1310702, 1073741860, 0, -1310701, -1610612704, 0, -1310680, 536870913, 0, -1310679, 536870913, 0, -1310678, 536870913, 0, -1310676, -1073741782, 0, -1310675, 38, 0, -1245166, 1073741860, 0, -1245165, -1610612704, 0, -1245140, -1073741782, 0, -1245139, 38, 0, -1179630, 1073741860, 0, -1179629, -1610612704, 0, -1179604, -1073741782, 0, -1179603, 38, 0, -1114094, 1073741860, 0, -1114093, -1610612704, 0, -1114072, 536870931, 0, -1114071, 536870931, 0, -1114070, 536870931, 0, -1114068, -1073741782, 0, -1114067, 38, 0, -1048558, 1073741860, 0, -1048557, -1610612704, 0, -1048532, -1073741782, 0, -1048531, 38, 0, -983022, 1073741860, 0, -983021, -1610612704, 0, -982996, -1073741782, 0, -982995, 38, 0, -917486, 1073741860, 0, -917485, -1610612704, 0, -917464, 536870931, 0, -917463, 536870930, 0, -917462, 536870929, 0, -917460, -1073741782, 0, -917459, -1073741782, 0, -851950, 1073741860, 0, -851949, -1610612704, 0, -851924, -1073741782, 0, -851923, 38, 0, -786414, 1073741860, 0, -786413, -1610612704, 0, -786410, 536870956, 0, -786408, 536870956, 0, -786406, 536870956, 0, -786404, 536870956, 0, -786402, 536870956, 0, -786400, 536870956, 0, -786398, 536870956, 0, -786388, -1073741782, 0, -786387, 38, 0, -720878, 1073741860, 0, -720877, -1610612704, 0, -720852, -1073741782, 0, -720851, 38, 0, -655342, 1073741860, 0, -655341, -1610612704, 0, -655320, 536870917, 0, -655319, 536870916, 0, -655318, 536870915, 0, -655316, -1073741782, 0, -655315, 38, 0, -589806, 1073741860, 0, -589805, -1610612704, 0, -589784, 536870924, 0, -589783, 536870922, 0, -589782, 536870918, 0, -589780, -1073741782, 0, -589779, 38, 0, -524270, 1073741860, 0, -524269, -1610612704, 0, -524244, -1073741782, 0, -524243, 38, 0, -458734, 1073741860, 0, -458733, -1610612704, 0, -458712, 536870917, 0, -458711, 536870916, 0, -458710, 536870915, 0, -458708, -1073741782, 0, -458707, 38, 0, -393176, 536870920, 0, -393175, 536870919, 0, -393174, 536870918, 0, -327660, 32, 0, -327659, 32, 0, -327658, 32, 0, -327657, 32, 0, -327656, 32, 0, -327655, 32, 0, -327654, 32, 0, -327653, 32, 0, -327652, 32, 0, -327651, 32, 0, -327650, 32, 0, -327649, 32, 0, -327648, 32, 0, -327647, 32, 0, -327646, 32, 0, -327645, 32, 0, -327644, 32, 0, -327643, 32, 0, -327642, 32, 0, -327641, 32, 0, -327640, 32, 0, -327639, 32, 0, -327638, 32, 0, -327637, 536870943, 0, -327636, 536870943, 0, -262126, -1610612695, 0, -262125, 37, 0, -262124, 37, 0, -262123, 37, 0, -262122, 37, 0, -262121, 37, 0, -262120, 37, 0, -262119, 37, 0, -262118, 37, 0, -262117, 37, 0, -262116, 37, 0, -262115, 37, 0, -262114, 37, 0, -262113, 37, 0, -262112, 37, 0, -262111, 37, 0, -262110, 37, 0, -262109, 37, 0, -262108, 37, 0, -262107, 37, 0, -262106, 37, 0, -262105, 37, 0, -262104, 37, 0, -262103, 37, 0, -262102, 37, 0, -262101, 37, 0, -262100, 37, 0, -262099, 39, 0, -196590, 40, 0, -196589, 41, 0, -196588, 41, 0, -196587, 41, 0, -196586, 41, 0, -196585, 41, 0, -196584, 41, 0, -196583, 41, 0, -196582, 41, 0, -196581, 41, 0, -196580, 41, 0, -196579, 41, 0, -196578, 41, 0, -196577, 41, 0, -196576, 41, 0, -196575, 41, 0, -196574, 41, 0, -196573, 41, 0, -196572, 41, 0, -196571, 41, 0, -196570, 41, 0, -196569, 41, 0, -196568, 41, 0, -196567, 41, 0, -196566, 41, 0, -196565, 41, 0, -196564, 41, 0, -196563, 42, 0 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileMap"]
+position = Vector2( -64.8805, -1409.29 )
+collision_layer = 2
+collision_mask = 19
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 754.66, 135.713 )
+shape = SubResource( 18 )
+one_way_collision = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 737.15, 395.104 )
+shape = SubResource( 19 )
+one_way_collision = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 378.608, 75.6703 )
+shape = SubResource( 20 )
+one_way_collision = true
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 860.699, 180.88 )
+shape = SubResource( 21 )
+one_way_collision = true
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 992.576, 137.367 )
+shape = SubResource( 22 )
+one_way_collision = true
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 430.971, 327.948 )
+shape = SubResource( 23 )
+one_way_collision = true
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 144.609, 331.425 )
+shape = SubResource( 24 )
+one_way_collision = true
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 151.859, 406.586 )
+shape = SubResource( 25 )
+one_way_collision = true
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 609.253, 344.48 )
+shape = SubResource( 26 )
+one_way_collision = true
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 1326.95, 614.96 )
+shape = SubResource( 27 )
+one_way_collision = true
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 64.8805, -26.4567 )
+shape = SubResource( 28 )
+one_way_collision = true
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 176.283, 23.3874 )
+shape = SubResource( 29 )
+one_way_collision = true
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 98.587, 40.4633 )
+shape = SubResource( 29 )
+one_way_collision = true
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 262.975, 40.4633 )
+shape = SubResource( 30 )
+one_way_collision = true
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 104.586, 215.172 )
+shape = SubResource( 31 )
+one_way_collision = true
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 490.042, 88.5194 )
+shape = SubResource( 32 )
+one_way_collision = true
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 902.541, 454.892 )
+shape = SubResource( 33 )
+one_way_collision = true
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 577.01, 135.713 )
+shape = SubResource( 34 )
+one_way_collision = true
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 145.831, 156.027 )
+shape = SubResource( 35 )
+one_way_collision = true
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 239.652, 137.367 )
+shape = SubResource( 36 )
+one_way_collision = true
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 672.919, 151.177 )
+shape = SubResource( 37 )
+one_way_collision = true
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 680.692, 231.027 )
+shape = SubResource( 38 )
+one_way_collision = true
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 688.495, 299.027 )
+shape = SubResource( 38 )
+one_way_collision = true
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 723.609, 954.471 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D39" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 497.051, 806.708 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D40" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 494.173, 779.163 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D42" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 318.859, 969.364 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D41" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 494.173, 744.704 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D34" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 716.033, 726.756 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D36" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 716.899, 614.96 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D37" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 737.15, 584.391 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D38" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 737.15, 554.427 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 723.609, 998.042 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 720.793, 1045.7 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D29" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 716.899, 1095.09 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D30" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 728.818, 1141.54 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D35" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 716.899, 661.952 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D31" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 728.818, 1189.73 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D32" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 728.818, 1254.1 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D33" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 728.818, 1304.86 )
+shape = SubResource( 39 )
+one_way_collision = true
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 716.899, 887.47 )
+shape = SubResource( 40 )
+one_way_collision = true
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 760.497, 856.754 )
+shape = SubResource( 40 )
+one_way_collision = true
+
+[node name="personnage_femme" parent="." instance=ExtResource( 3 )]
+position = Vector2( -23.9477, 334.75 )
+collision_mask = 30
+
+[node name="Camera2D" type="Camera2D" parent="personnage_femme"]
+position = Vector2( 415.511, -12.4926 )
+current = true
+limit_left = -1000
+limit_top = -500
+drag_margin_v_enabled = true
+drag_margin_left = 0.5
+drag_margin_right = 0.5
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="sky" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 2, 2 )
+motion_mirroring = Vector2( 1300, 480 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/sky"]
+modulate = Color( 0.356863, 0.305882, 0.305882, 1 )
+self_modulate = Color( 0.709804, 0.682353, 0.682353, 1 )
+position = Vector2( -56.6234, -319.375 )
+scale = Vector2( 2.00095, 2 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 294.241, 1536.49 )
+collision_layer = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="fallzone" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 365.554, 227.08 )
+shape = SubResource( 41 )
+
+[node name="apple" parent="." instance=ExtResource( 7 )]
+position = Vector2( 678.295, -29.5093 )
+
+[node name="apple3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 419.932, -364.143 )
+
+[node name="apple7" parent="." instance=ExtResource( 7 )]
+position = Vector2( 248.311, 396.281 )
+
+[node name="apple8" parent="." instance=ExtResource( 7 )]
+position = Vector2( 608.362, 287.694 )
+
+[node name="apple6" parent="." instance=ExtResource( 7 )]
+position = Vector2( 550.368, 103.794 )
+
+[node name="apple5" parent="." instance=ExtResource( 7 )]
+position = Vector2( -181.908, 52.4013 )
+
+[node name="apple2" parent="." instance=ExtResource( 7 )]
+position = Vector2( -114.341, -134.977 )
+
+[node name="apple9" parent="." instance=ExtResource( 7 )]
+position = Vector2( 161.988, 920.085 )
+
+[node name="apple4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 340.004, 1171.5 )
+
+[node name="nombre de pomme" type="CanvasLayer" parent="."]
+script = ExtResource( 10 )
+
+[node name="Panel" type="Panel" parent="nombre de pomme"]
+margin_left = 298.283
+margin_top = 215.915
+margin_right = 437.283
+margin_bottom = 287.915
+custom_styles/panel = SubResource( 42 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="nombre de pomme"]
+margin_left = 298.283
+margin_top = 224.931
+margin_right = 358.283
+margin_bottom = 292.931
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="nombre de pomme"]
+anchor_left = -0.000181615
+anchor_right = -0.000181615
+margin_left = 352.45
+margin_top = 215.915
+margin_right = 441.45
+margin_bottom = 290.915
+custom_fonts/font = SubResource( 43 )
+custom_colors/font_color = Color( 0.278431, 0.662745, 0.117647, 1 )
+text = "x"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="apple" type="Label" parent="nombre de pomme"]
+margin_left = 385.48
+margin_top = 224.931
+margin_right = 455.48
+margin_bottom = 283.931
+custom_fonts/font = SubResource( 44 )
+custom_colors/font_color = Color( 0.85098, 0.137255, 0.137255, 1 )
+text = "#"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="faux pomme" type="Panel" parent="nombre de pomme"]
+margin_left = 448.104
+margin_top = 215.915
+margin_right = 608.104
+margin_bottom = 293.915
+custom_styles/panel = SubResource( 45 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="faux pomme2" type="TextureRect" parent="nombre de pomme"]
+margin_left = 459.611
+margin_top = 220.537
+margin_right = 519.611
+margin_bottom = 292.537
+texture = ExtResource( 12 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="faux pomme3" type="Label" parent="nombre de pomme"]
+anchor_top = 0.0142235
+anchor_bottom = 0.0142235
+margin_left = 512.471
+margin_top = 207.381
+margin_right = 681.471
+margin_bottom = 282.381
+custom_fonts/font = SubResource( 46 )
+custom_colors/font_color = Color( 0.301961, 0.694118, 0.278431, 1 )
+text = "x"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="faux pomme 4" type="Label" parent="nombre de pomme"]
+anchor_left = -0.000216246
+anchor_right = -0.000216246
+margin_left = 554.632
+margin_top = 230.714
+margin_right = 632.632
+margin_bottom = 375.714
+custom_fonts/font = SubResource( 47 )
+text = "#
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gardien" parent="." instance=ExtResource( 14 )]
+position = Vector2( 149.776, 331.37 )
+collision_layer = 16
+collision_mask = 3
+
+[node name="gardien2" parent="." instance=ExtResource( 14 )]
+position = Vector2( 538.406, 1268.5 )
+collision_layer = 16
+collision_mask = 3
+
+[node name="gardien3" parent="." instance=ExtResource( 14 )]
+position = Vector2( 284.166, 1003.25 )
+collision_layer = 16
+collision_mask = 3
+
+[node name="gardien4" parent="." instance=ExtResource( 14 )]
+position = Vector2( 419.932, 959.09 )
+collision_layer = 16
+collision_mask = 3
+
+[node name="gardien5" parent="." instance=ExtResource( 14 )]
+position = Vector2( 623.039, 883.781 )
+collision_layer = 16
+collision_mask = 3
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[connection signal="body_entered" from="Area2D" to="personnage_femme" method="_on_Area2D_body_entered"]
+[connection signal="appele_collected" from="apple" to="nombre de pomme" method="_on_apple_faux_appele_collected"]
+[connection signal="appele_collected" from="apple3" to="nombre de pomme" method="_on_apple_faux_appele_collected"]
+[connection signal="appele_collected" from="apple7" to="nombre de pomme" method="_on_apple_faux_appele_collected"]
+[connection signal="appele_collected" from="apple8" to="nombre de pomme" method="_on_apple_faux_appele_collected"]
+[connection signal="appele_collected" from="apple6" to="nombre de pomme" method="_on_apple_faux_appele_collected"]
+[connection signal="appele_collected" from="apple5" to="nombre de pomme" method="_on_apple_faux_appele_collected"]
+[connection signal="appele_collected" from="apple2" to="nombre de pomme" method="_on__appele_collected"]
+[connection signal="appele_collected" from="apple9" to="nombre de pomme" method="_on__appele_collected"]
+[connection signal="appele_collected" from="apple4" to="nombre de pomme" method="_on__appele_collected"]

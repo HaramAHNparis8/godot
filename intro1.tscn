@@ -1,0 +1,89 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://background_modifi_size_godot7.png" type="Texture" id=1]
+[ext_resource path="res://scens_change.gd" type="Script" id=2]
+[ext_resource path="res://DroidSans-Bold.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://background_modifi_size_godot2.png" type="Texture" id=4]
+[ext_resource path="res://background_modifi_size_godot5.png" type="Texture" id=5]
+[ext_resource path="res://background_modifi_size_godot6.png" type="Texture" id=6]
+[ext_resource path="res://background_modifi_size_godot4.png" type="Texture" id=7]
+[ext_resource path="res://background_modifi_size_godot1.png" type="Texture" id=8]
+[ext_resource path="res://background_modifi_size_godot8.png" type="Texture" id=9]
+[ext_resource path="res://background_modifi_size_godot3.png" type="Texture" id=10]
+[ext_resource path="res://dialogue.tscn" type="PackedScene" id=11]
+[ext_resource path="res://next.gd" type="Script" id=12]
+[ext_resource path="res://ES_FOLLOW ME Wild Horse - Cospe.mp3" type="AudioStream" id=13]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 4 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 1 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "back_ground",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+outline_size = 4
+outline_color = Color( 0.733333, 0.301961, 0.301961, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+outline_size = 4
+outline_color = Color( 0.419608, 0.113725, 0.113725, 1 )
+font_data = ExtResource( 3 )
+
+[node name="intro1" type="Node2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 520.303, 289.773 )
+scale = Vector2( 0.816747, 0.863445 )
+frames = SubResource( 1 )
+animation = "back_ground"
+playing = true
+
+[node name="dialogue" parent="." instance=ExtResource( 11 )]
+margin_left = 483.916
+margin_top = 600.613
+margin_right = 483.916
+margin_bottom = 600.613
+
+[node name="intro_skip" type="Button" parent="."]
+margin_left = 934.189
+margin_top = 540.983
+margin_right = 1052.18
+margin_bottom = 590.983
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.509804, 0.152941, 0.152941, 1 )
+custom_colors/font_color_hover = Color( 0.760784, 0.643137, 0.643137, 1 )
+custom_colors/font_color_pressed = Color( 0.152941, 0.647059, 0.411765, 1 )
+text = "skip"
+flat = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="next" type="Button" parent="."]
+margin_left = 951.228
+margin_top = 481.767
+margin_right = 1027.23
+margin_bottom = 523.767
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.52549, 0.101961, 0.101961, 1 )
+custom_colors/font_color = Color( 0.564706, 0.419608, 0.419608, 1 )
+custom_colors/font_color_hover = Color( 0.4, 0.0862745, 0.0862745, 1 )
+text = "next"
+flat = true
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+autoplay = true
+
+[connection signal="pressed" from="intro_skip" to="intro_skip" method="_on_scens_change_pressed"]
+[connection signal="pressed" from="next" to="next" method="_on_next_pressed"]
