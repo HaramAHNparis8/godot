@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://background_godot.png" type="Texture" id=1]
+[ext_resource path="res://REREREBackground.gd" type="Script" id=2]
+
+[node name="REREREBackground" type="ParallaxBackground"]
+script = ExtResource( 2 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.1, 1 )
+motion_mirroring = Vector2( 1020, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 530.125, 299.105 )
+scale = Vector2( 1.61813, 1.24627 )
+texture = ExtResource( 1 )

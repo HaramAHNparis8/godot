@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://ArchitectsDaughter.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://personne_hommepng1.png" type="Texture" id=2]
+[ext_resource path="res://personne_hommepng2.png" type="Texture" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 12.7218
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+font_data = ExtResource( 1 )
+
+[node name="personne_homme" type="Area2D"]
+position = Vector2( -6.37839, 13.3758 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 251.489, 416.902 )
+scale = Vector2( 1.19828, 1.17262 )
+frames = SubResource( 1 )
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 251.851, 424.134 )
+shape = SubResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = 241.922
+margin_top = 233.58
+margin_right = 345.922
+margin_bottom = 310.58
+custom_fonts/font = SubResource( 3 )
+text = "click"
+__meta__ = {
+"_edit_use_anchors_": false
+}

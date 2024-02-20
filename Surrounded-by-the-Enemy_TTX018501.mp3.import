@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Surrounded-by-the-Enemy_TTX018501.mp3-93834a07b08fd6aa2be9a991f8eabff4.mp3str"
+
+[deps]
+
+source_file="res://Surrounded-by-the-Enemy_TTX018501.mp3"
+dest_files=[ "res://.import/Surrounded-by-the-Enemy_TTX018501.mp3-93834a07b08fd6aa2be9a991f8eabff4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
